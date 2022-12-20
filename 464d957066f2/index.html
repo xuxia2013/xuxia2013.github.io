@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>如何同步并管理我的文章 - 戎码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="code-CAxafSB2TA" />
+<meta name="sogou_site_verification" content="yzpQyJWE4Y" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="">
+
+
+
+<meta name="keywords" content="web, frontend, webpack, vue, javascript, react, uniapp, css">
+
+
+
+    <meta name="description" content="为什么要搭建技术博客前几日在平台看到这个文章中文互联网的产出在渐渐枯萎吗？，深有感触，知乎这个平台的出现，早期的时候沉淀了许多优质的用户和文章，后来商业化后渐渐的对我没有吸引力了。我不知道多少人喜欢微信公众号，反正我很是讨厌，太封闭，限制太多，发布后就不让修改，也不让添加外链，不能RSS，也无法在网站搜索文章等等。自问也没有能力改变这个营销号漫天飞的环境，很喜欢电影《无问西东》中台词：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何同步并管理我的文章">
+<meta property="og:url" content="http://www.noraxu.online/464d957066f2/index.html">
+<meta property="og:site_name" content="戎码科技">
+<meta property="og:description" content="为什么要搭建技术博客前几日在平台看到这个文章中文互联网的产出在渐渐枯萎吗？，深有感触，知乎这个平台的出现，早期的时候沉淀了许多优质的用户和文章，后来商业化后渐渐的对我没有吸引力了。我不知道多少人喜欢微信公众号，反正我很是讨厌，太封闭，限制太多，发布后就不让修改，也不让添加外链，不能RSS，也无法在网站搜索文章等等。自问也没有能力改变这个营销号漫天飞的环境，很喜欢电影《无问西东》中台词：">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6376f80416f2c2beb1dd7d51.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6376f80416f2c2beb1dd7d4c.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6329287c16f2c2beb16560c1.png">
+<meta property="article:published_time" content="2022-09-13T03:43:30.000Z">
+<meta property="article:modified_time" content="2022-11-21T02:08:33.672Z">
+<meta property="article:author" content="noraxu">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6376f80416f2c2beb1dd7d51.png">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro">
+
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro"> -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script type='text/javascript' src='' async='async'></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<style>
+    hr{
+        margin: 0.4rem 0 1.5rem 0;
+    }
+    .article  svg.fa-external-link-alt{
+        display: none !important;
+    }
+</style>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="戎码科技" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/favicon.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/all">教程</a>
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            <!-- 
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i> 
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#为什么要搭建技术博客">1&nbsp;&nbsp;<span>为什么要搭建技术博客</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#我是如何管理博客的">2&nbsp;&nbsp;<span>我是如何管理博客的</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#同步工具">3&nbsp;&nbsp;<span>同步工具</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#免费图床">4&nbsp;&nbsp;<span>免费图床</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#技术人爱逛的网站">5&nbsp;&nbsp;<span>技术人爱逛的网站</span></a>
+                    
+                </div>
+            </div>
+             -->
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/xuxia2013">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            <a class="navbar-item" title="Rss" href="/atom.xml">
+                
+                <i class="fa fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            如何同步并管理我的文章
+        
+    </h1>
+    
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2022-09-13T03:43:30.000Z" itemprop="datePublished">9月 13 2022</time>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/blog/">blog</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            10 分钟 读完 (约 1522 字)
+            
+            
+            <span id="/464d957066f2/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count"></i>
+            </span>
+            
+        </span>
+        
+        
+
+    </div>
+    
+
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><h3 id="为什么要搭建技术博客"><a href="#为什么要搭建技术博客" class="headerlink" title="为什么要搭建技术博客"></a>为什么要搭建技术博客</h3><p>前几日在平台看到这个文章<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/49684783/answer/2305132342">中文互联网的产出在渐渐枯萎吗？</a>，深有感触，知乎这个平台的出现，早期的时候沉淀了许多优质的用户和文章，后来商业化后渐渐的对我没有吸引力了。我不知道多少人喜欢微信公众号，反正我很是讨厌，太封闭，限制太多，发布后就不让修改，也不让添加外链，不能RSS，也无法在网站搜索文章等等。自问也没有能力改变这个营销号漫天飞的环境，很喜欢电影《无问西东》中台词：</p>
+<span id="more"></span>
+<blockquote>
+<p>世俗这样强大，强大到生不出改变它们的念头来。可是无论外界的社会如何跌宕起伏，都对自己真诚，坚守原则。内心没有了杂念和疑问，才能勇往直前。这个世界缺的不是完美的人，而是从心底给出的真心，正义，无畏与同情。<br>不要放弃，对自己的思索，对自己的真实。</p>
+</blockquote>
+<p>做自己认为有价值的事情，一直坚持去做。这就是我的理由。</p>
+<p>写文章是痛苦的，通常一周也就2篇文章的输出，每次花费5个多小时，写完还要审查下有没有错别字，配图是不是合理，文章通常改了又改，后续补充又补充。<br>为了逼自己输出内容，不得不去看东西学新东西，读书、看源码、听播客，然后把自己遇到的、自己处理的解决方案写下来，通常还要把环境再重装一次，项目再重新创建一次，折腾来折腾去。</p>
+<p>在完成主业的同时，研究着些小项目、开源项目等等，以前写进代办事项落灰的清单也在慢慢被清除，目前看下收获也算颇丰了，除了能力的提升，还有精神上满足感，不再焦虑，生活质量也提高不少。</p>
+<h3 id="我是如何管理博客的"><a href="#我是如何管理博客的" class="headerlink" title="我是如何管理博客的"></a>我是如何管理博客的</h3><p>和很多技术人员一样，我酷爱使用软件<a target="_blank" rel="noopener" href="https://code.visualstudio.com/"><code>vscode</code></a>来编辑md,步骤点此：<a href="/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2">如何零成本搭建一个博客</a>，然后通过自己用js写的脚本手动更新并同步到各个平台。</p>
+<figure class="highlight json hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">"publish"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; node async.js"</span> </span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果你不是技术人员，你可以使用下面这个同步工具</p>
+<h3 id="同步工具"><a href="#同步工具" class="headerlink" title="同步工具"></a>同步工具</h3><p><strong><a target="_blank" rel="noopener" href="https://www.wechatsync.com/">微信公众号同步助手</a></strong></p>
+<p>在官网下载安装包，安装插件后，在网页右击-提取文章并同步</p>
+<p>如果没有登录，可以直接去网站登录，后面再次点击同步就出现这个网站图标了，操作起来还是很顺畅的。</p>
+<p>但是同步后只是到草稿，还不是正式发布，需要手动，感兴趣去官网看看吧。</p>
+<p><img src="https://pic.imgdb.cn/item/6376f80416f2c2beb1dd7d51.png"></p>
+<p>目前已经支持：20多个平台</p>
+<p><img src="https://pic.imgdb.cn/item/6376f80416f2c2beb1dd7d4c.png"></p>
+<h3 id="免费图床"><a href="#免费图床" class="headerlink" title="免费图床"></a>免费图床</h3><p>写文章最怕什么，微信公众号封面要配图，文章首页要配图，内容排版要加图吸引用户。<br>俗话说一图胜千言，但是找图实在是累死人的活儿，下面推荐几种免费可商用的网站。</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://imagelol.com/"><code>笑果图床</code></a></p>
+<ul>
+<li>支持外链，无限空间，无限流量,</li>
+<li>无需登录即可上传，最大支持10M的图片</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><code>Pexels</code></a> </p>
+<p>是一家国外的免费高清图片网站。适合寻找风景图和各类职场、商业场景大图。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://unsplash.com/"><code>Unsplash</code></a> </p>
+<p>想寻找一些高质量的高逼格的图片，不妨到这个网站来试试。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.superbed.cn/"><code>聚合图床</code></a></p>
+<p><img src="https://pic.imgdb.cn/item/6329287c16f2c2beb16560c1.png"></p>
+</li>
+</ul>
+<p>笑果图床是我一直在用的，不得不说页面不是很好看，但是服务一直稳定，也就没替换了。</p>
+<p>一般配合Pexels和unsplash在一起用，数量上不如<a target="_blank" rel="noopener" href="https://pixabay.com/zh/"><code>Pixabay</code></a>，但是质量很高。</p>
+<p>你可以：在电脑上写完文章后，把配图一次性上传到笑果图床，在网站上把生成的html页面再粘贴到公众号，无需再一个个上传到微信公众号了，很是方便。</p>
+<h3 id="技术人爱逛的网站"><a href="#技术人爱逛的网站" class="headerlink" title="技术人爱逛的网站"></a>技术人爱逛的网站</h3><ul>
+<li>优质独立博客</li>
+</ul>
+<blockquote>
+<p>中文独立博客列表<br>  <a target="_blank" rel="noopener" href="https://github.com/timqian/chinese-independent-blogs">https://github.com/timqian/chinese-independent-blogs</a></p>
+</blockquote>
+<ul>
+<li><p>优秀的技术网站</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://news.ycombinator.com/"><code>Hacker News</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.v2ex.com/"><code>v2ex</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://medium.com/tag/javascript"><code>medium</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/"><code>博客园</code></a></p>
+</li>
+</ul>
+</li>
+<li><p>有哪些值得邮件订阅的网站</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://hackernewsletter.com/"><code>Hacker News</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://javascriptweekly.com/"><code>JavaScript Weekly</code></a> 每周一封，关于JavaScript的新闻和文章</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://frontendfoc.us/"><code>Frontend Focus</code></a> 最佳前端新闻，文章和教程的周刊综述。HTML，CSS，WebGL，画布，浏览器技术等。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://nodeweekly.com/"><code>Node Weekly</code></a> 免费的，每周一次的免费电子邮件汇总。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://esnextnews.com/#"><code>ES.next News</code></a> 最新的ES知识推送</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://react.statuscode.com/"><code>React Status</code></a> React</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://uxdesignweekly.com/"><code>UX Design Weekly</code></a> 每周最佳用户体验设计</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.dailyui.co/"><code>Daily UI</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://css-weekly.com/"><code>cssweekly</code></a> CSS每周一次</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.infoq.cn/"><code>InfoQ 每周精要</code></a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://medium.com/me/settings"><code>Medium Digest</code></a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果你也想搭建一个网站：<a href="/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2">如何零成本搭建一个博客</a>，不妨看下此文。</p>
+<p>原文：<a target="_blank" rel="noopener" href="https://xuxia2013.github.io/%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%B9%B6%E7%AE%A1%E7%90%86%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/">https://xuxia2013.github.io/%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%B9%B6%E7%AE%A1%E7%90%86%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</a></p>
+</body></html>
+
+        
+
+
+
+    
+        
+       
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%E5%B7%A5%E5%85%B7/">#工具</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%E5%8D%9A%E5%AE%A2/">#博客</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/a5467de46cfc/">动物农场</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/11ea0d754414/">浅谈uniapp</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!--  -->
+
+
+<div class="comments">
+    <h3 class="title is-4">评论</h3>
+    
+<div id="valine-thread"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread',
+        appId: 'dkfRMMgm7mPAPRSsAiKjuX1R-gzGzoHsz',
+        appKey: 'pnjo7tFMsoXaP1IqVEy1SyTw',
+        notify: true,
+        verify: false,
+        avatar: '',
+        placeholder: '留下点什么吧...',
+        meta: ['nick', 'mail'],
+        visitor: true,
+        lang: ''
+    })
+</script>
+
+
+</div>
+
+
+
+  
+      <div class="toc-table">
+         <p class="head">目录</p>
+          
+          
+          
+          
+          <a class="navbar-item" href="#为什么要搭建技术博客">
+            <span style="opacity: 0">1.</span>
+            &nbsp;&nbsp;<span>为什么要搭建技术博客</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#我是如何管理博客的">
+            <span style="opacity: 0">2.</span>
+            &nbsp;&nbsp;<span>我是如何管理博客的</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#同步工具">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>同步工具</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#免费图床">
+            <span style="opacity: 0">4.</span>
+            &nbsp;&nbsp;<span>免费图床</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#技术人爱逛的网站">
+            <span style="opacity: 0">5.</span>
+            &nbsp;&nbsp;<span>技术人爱逛的网站</span></a>
+          
+          <p style="margin-top: 15px;text-align: center;  border-top: 2px solid #f0f0f0;">
+            <img src="https://pic.imgdb.cn/item/637adceb16f2c2beb1a8d901.jpg" alt="" width="120" style="padding: 10px 0 0px;">
+          </p>
+      </div>
+  
+
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+       
+        <div class="columns content">
+
+            <div class="column is-narrow has-text-centered" style="display: flex; width: 100%;">
+                <span style="flex: 1">
+                    &copy; 2022
+                    noraxu&nbsp;
+                        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                                target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                </span>
+                <span style="flex: 1">
+                    本站总访问量<span id="busuanzi_value_site_pv" style="color: #3273dc;"></span>次
+                    本站访客数<span id="busuanzi_value_site_uv" style="color: #3273dc;"></span>人次
+                </span>
+
+            </div>
+            
+            <div class="column is-hidden-mobile"></div>
+
+            
+                    
+
+        </div>
+        
+        <div style="justify-content: center;
+        display: flex;
+        align-items: center;">
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>本作品采用<a rel="license noopener"
+                target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+        </div>
+
+        
+       
+
+    </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery > p > .gallery-item').unwrap();
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

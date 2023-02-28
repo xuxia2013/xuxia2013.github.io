@@ -1,5 +1,9 @@
 @charset "UTF-8";
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
   font-family: "Noto Serif SC", "Microsoft YaHei", "lato", "Georgia", "STZhongsong", "Microsoft YaHei", serif; }
 
 a.tag.article-tag {
@@ -44,7 +48,7 @@ a.tag.article-tag {
     border-bottom-color: black; }
 
 .article .article-meta {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .article .article-meta {
@@ -57,10 +61,20 @@ a.tag.article-tag {
 
 .article .article-entry {
   margin-bottom: 3rem; }
-  .article .article-entry h1, .article .article-entry h2, .article .article-entry h3, .article .article-entry h4, .article .article-entry h5, .article .article-entry h6 {
+  .article .article-entry h1,
+  .article .article-entry h2,
+  .article .article-entry h3,
+  .article .article-entry h4,
+  .article .article-entry h5,
+  .article .article-entry h6 {
     cursor: pointer;
     position: relative; }
-    .article .article-entry h1:hover:before, .article .article-entry h2:hover:before, .article .article-entry h3:hover:before, .article .article-entry h4:hover:before, .article .article-entry h5:hover:before, .article .article-entry h6:hover:before {
+    .article .article-entry h1:hover:before,
+    .article .article-entry h2:hover:before,
+    .article .article-entry h3:hover:before,
+    .article .article-entry h4:hover:before,
+    .article .article-entry h5:hover:before,
+    .article .article-entry h6:hover:before {
       content: '#';
       position: absolute;
       right: 100%; }
@@ -68,7 +82,7 @@ a.tag.article-tag {
     word-break: break-word; }
 
 .article .article-more-link a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: darkgray;
   border-bottom: 1px dotted transparent; }
   .article .article-more-link a:hover {
@@ -105,23 +119,26 @@ a.tag.article-tag {
 .article .caption {
   display: block;
   color: darkgray;
-  font-size: .95rem;
+  font-size: 0.95rem;
   text-align: center; }
 
-.article a[target="_blank"]:after {
+.article a[target='_blank']:after {
   display: none;
-  content: "\f35d";
-  font-size: .8rem;
-  font-family: "Font Awesome 5 Solid"; }
+  content: '\f35d';
+  font-size: 0.8rem;
+  font-family: 'Font Awesome 5 Solid'; }
 
-.article a[target="_blank"] .fa-external-link-alt {
-  margin-left: .3rem;
-  width: .8rem; }
+.article a[target='_blank'] .fa-external-link-alt {
+  margin-left: 0.3rem;
+  width: 0.8rem; }
+
+.article blockquote p {
+  line-height: 1.8; }
 
 .article blockquote.colorquote {
   position: relative; }
   .article blockquote.colorquote:before {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 50%;
     left: -14.5px;
@@ -169,7 +186,7 @@ a.tag.article-tag {
       float: none;
       max-width: 100%; } }
   .article blockquote.pullquote:before {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 5px;
     left: 5px;
@@ -181,8 +198,8 @@ a.tag.article-tag {
 .article blockquote footer cite {
   font-style: normal; }
   .article blockquote footer cite:before {
-    content: "—";
-    padding: 0 .3em; }
+    content: '—';
+    padding: 0 0.3em; }
 
 .article .gist table tr:hover {
   background: transparent; }
@@ -222,7 +239,7 @@ a.tag.article-tag {
   .archive .article:hover {
     border-left-color: black; }
   .archive .article time {
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: darkgray; }
   .archive .article h6 {
     margin: 0; }
@@ -233,7 +250,7 @@ a.tag.article-tag {
         border-bottom-color: darkgray; }
 
 .footer {
-  font-size: .9rem;
+  font-size: 0.9rem;
   background: transparent;
   padding: 2rem 1.5rem 2rem; }
   .footer .content {
@@ -307,7 +324,8 @@ a.tag.article-tag {
         height: 100%;
         background: #f7f7f7; } }
 
-code, pre {
+code,
+pre {
   font-size: 0.85rem;
   font-family: "Source Code Pro", monospace, "Microsoft YaHei"; }
 
@@ -322,18 +340,18 @@ figure.highlight {
   figure.highlight table {
     width: auto; }
   figure.highlight pre {
-    padding: 0;
+    padding: 10px 5px;
     overflow: visible; }
     figure.highlight pre .line {
-      line-height: 1.5rem; }
+      line-height: 0rem; }
   figure.highlight figcaption,
   figure.highlight .gutter {
     background: rgba(200, 200, 200, 0.15); }
   figure.highlight figcaption {
-    padding: .3em .75em;
+    padding: 0.3em 0.75em;
     text-align: left;
     font-style: normal;
-    font-size: .8rem; }
+    font-size: 0.8rem; }
     figure.highlight figcaption span {
       font-weight: 500;
       font-family: "Source Code Pro", monospace, "Microsoft YaHei"; }
@@ -413,7 +431,7 @@ figure.highlight {
   .gallery-item .caption {
     display: none;
     position: absolute;
-    opacity: .7;
+    opacity: 0.7;
     bottom: 0;
     padding: 5px;
     background-color: #000;
@@ -501,13 +519,17 @@ li {
 .toc-table {
   position: fixed;
   max-width: 240px;
+  min-width: 120px;
+  height: 100%;
   top: 3.3rem;
   right: 4px;
+  padding-bottom: 4rem;
   font-size: smaller;
   z-index: 1;
   background: white;
   border: 1px solid #f0f0f0;
-  border-right: none; }
+  border-right: none;
+  overflow: auto; }
   .toc-table .head {
     margin: 0.5rem; }
   .toc-table .navbar-item {
@@ -526,6 +548,9 @@ li {
     width: 60% !important; }
   .article p a.gallery-item img[title='w70'] {
     width: 70% !important; }
+
+img.vimg {
+  display: none; }
 
 .all-box {
   display: flex;

@@ -15,8 +15,129 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 05 Jan 2023 07:52:06 GMT</pubDate>
+    <pubDate>Wed, 22 Feb 2023 04:43:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>在GitHub上学习系列之AI课程</title>
+      <link>http://www.noraxu.online/392cbd981ca7/</link>
+      <guid>http://www.noraxu.online/392cbd981ca7/</guid>
+      <pubDate>Wed, 22 Feb 2023 04:08:07 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;火爆了的ChatGPT，兴奋劲过去了之后谈谈我的一些看法&lt;/p&gt;
+&lt;p&gt;很多人说会替代程序员，且不说程序员每天能敲多少代码，大量时间都在跟产品撕逼，写文档，真正写代码时间是很少的，其次，我乐观看未来20年应该还不能替代程序员，程序员这工作还没有那么大的风险。不过，对于这样提高效率的工具，大家应该学习然后用起来，省了很多脑细胞不是嘛？后台很多小伙伴问怎么学习ai技术，下面提供些吧，或许你有更好的教程，也请发出来看看，ai对一般人是遥不可及的，学习路线漫漫长，技术的魅力就在每一次深入研究后发掘中，顿悟后那点点自豪感吧。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.online/392cbd981ca7/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>前端初学者如何接入ChatGPT</title>
+      <link>http://www.noraxu.online/25633ba1e544/</link>
+      <guid>http://www.noraxu.online/25633ba1e544/</guid>
+      <pubDate>Tue, 21 Feb 2023 09:27:35 GMT</pubDate>
+      
+      <description>ChatGPT, AI, Javascript</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/ChatGPT-AI-Javascript/">ChatGPT, AI, Javascript</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/ChatGPT/">ChatGPT</category>
+      
+      <category domain="http://www.noraxu.online/tags/AI/">AI</category>
+      
+      
+      <comments>http://www.noraxu.online/25633ba1e544/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>推荐一个免费好用的下载技术书籍的网站</title>
+      <link>http://www.noraxu.online/e19032dae9bc/</link>
+      <guid>http://www.noraxu.online/e19032dae9bc/</guid>
+      <pubDate>Mon, 20 Feb 2023 02:42:56 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;https-freecomputerbooks-com&quot;&gt;&lt;a href=&quot;#https-freecomputerbooks-com&quot; class=&quot;headerlink&quot; title=&quot;https://freecomputerbooks.com/&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://freecomputerbooks.com/&quot;&gt;https://freecomputerbooks.com/&lt;/a&gt;&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.online/e19032dae9bc/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>JavaScript后端框架：Next, Nest, Nuxt… Nust?</title>
+      <link>http://www.noraxu.online/045a82182849/</link>
+      <guid>http://www.noraxu.online/045a82182849/</guid>
+      <pubDate>Fri, 17 Feb 2023 03:44:58 GMT</pubDate>
+      
+      <description>JavaScript后端框架, Next, Nest, Nuxt, Nust</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
+      
+      
+      <comments>http://www.noraxu.online/045a82182849/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>浅谈低代码</title>
+      <link>http://www.noraxu.online/176e453cd681/</link>
+      <guid>http://www.noraxu.online/176e453cd681/</guid>
+      <pubDate>Thu, 16 Feb 2023 03:57:45 GMT</pubDate>
+      
+      <description>低代码, Low-Code, 开源低代码框架推荐, 定制化表单, 管理后台, Appsmith, ToolJet, Budibase, LowCodeEngine</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</category>
+      
+      
+      <comments>http://www.noraxu.online/176e453cd681/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>自建图床</title>
+      <link>http://www.noraxu.online/2cea3fa6c2b4/</link>
+      <guid>http://www.noraxu.online/2cea3fa6c2b4/</guid>
+      <pubDate>Wed, 18 Jan 2023 09:02:05 GMT</pubDate>
+      
+      <description>工具</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <comments>http://www.noraxu.online/2cea3fa6c2b4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>学习资料：Rust-未来前端基础设施</title>
@@ -325,150 +446,6 @@
       
       
       <comments>http://www.noraxu.online/992d13211977/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>uniapp如何实现消息推送</title>
-      <link>http://www.noraxu.online/e7307e5a7a5e/</link>
-      <guid>http://www.noraxu.online/e7307e5a7a5e/</guid>
-      <pubDate>Mon, 21 Nov 2022 07:40:12 GMT</pubDate>
-      
-      <description>uniapp如何实现消息推送, uniapp开发, 应用, app, vue开发, 开发总结</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/uniapp/">uniapp</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/uniapp/">uniapp</category>
-      
-      <category domain="http://www.noraxu.online/tags/%E5%BA%94%E7%94%A8/">应用</category>
-      
-      <category domain="http://www.noraxu.online/tags/app/">app</category>
-      
-      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
-      
-      
-      <comments>http://www.noraxu.online/e7307e5a7a5e/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>用uniapp开发一个新闻小程序</title>
-      <link>http://www.noraxu.online/2499ca70b77f/</link>
-      <guid>http://www.noraxu.online/2499ca70b77f/</guid>
-      <pubDate>Mon, 21 Nov 2022 02:08:33 GMT</pubDate>
-      
-      <description>微信小程序开发，uniapp开发</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/uniapp/">uniapp</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/uniapp/">uniapp</category>
-      
-      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
-      
-      <category domain="http://www.noraxu.online/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</category>
-      
-      <category domain="http://www.noraxu.online/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</category>
-      
-      
-      <comments>http://www.noraxu.online/2499ca70b77f/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>为什么说数字输入框是最最难用</title>
-      <link>http://www.noraxu.online/89b31747257f/</link>
-      <guid>http://www.noraxu.online/89b31747257f/</guid>
-      <pubDate>Mon, 21 Nov 2022 02:08:33 GMT</pubDate>
-      
-      <description>数字输入框</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <comments>http://www.noraxu.online/89b31747257f/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>uniapp大项目如何瘦身</title>
-      <link>http://www.noraxu.online/d42c9c2416a4/</link>
-      <guid>http://www.noraxu.online/d42c9c2416a4/</guid>
-      <pubDate>Mon, 21 Nov 2022 02:08:33 GMT</pubDate>
-      
-      <description>微信小程序开发，uniapp开发</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/uniapp/">uniapp</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/uniapp/">uniapp</category>
-      
-      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
-      
-      <category domain="http://www.noraxu.online/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</category>
-      
-      <category domain="http://www.noraxu.online/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</category>
-      
-      
-      <comments>http://www.noraxu.online/d42c9c2416a4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>深入学习flutter(零)</title>
-      <link>http://www.noraxu.online/185bfbae2328/</link>
-      <guid>http://www.noraxu.online/185bfbae2328/</guid>
-      <pubDate>Wed, 09 Nov 2022 09:37:28 GMT</pubDate>
-      
-      <description>flutter</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/flutter/">flutter</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/flutter/">flutter</category>
-      
-      
-      <comments>http://www.noraxu.online/185bfbae2328/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Turbopack 将会是 Web 下一代的打包工具</title>
-      <link>http://www.noraxu.online/7263a2032826/</link>
-      <guid>http://www.noraxu.online/7263a2032826/</guid>
-      <pubDate>Wed, 02 Nov 2022 02:41:46 GMT</pubDate>
-      
-      <description>Turbopack, web, 打包工具</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/webapck/">webapck</category>
-      
-      
-      <comments>http://www.noraxu.online/7263a2032826/#disqus_thread</comments>
       
     </item>
     

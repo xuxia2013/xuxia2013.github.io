@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>JavaScript后端框架：Next, Nest, Nuxt… Nust? - 戎码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="code-CAxafSB2TA" />
+<meta name="sogou_site_verification" content="yzpQyJWE4Y" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="JavaScript后端框架, Next, Nest, Nuxt, Nust">
+
+
+
+<meta name="keywords" content="JavaScript后端框架, Next, Nest, Nuxt, Nust">
+
+
+
+    <meta name="description" content="JavaScript后端框架, Next, Nest, Nuxt, Nust">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript后端框架：Next, Nest, Nuxt… Nust?">
+<meta property="og:url" content="http://www.noraxu.online/045a82182849/index.html">
+<meta property="og:site_name" content="戎码科技">
+<meta property="og:description" content="JavaScript后端框架, Next, Nest, Nuxt, Nust">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/5.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/3.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/2.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/1.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/4.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/6.png">
+<meta property="og:image" content="http://www.noraxu.online/045a82182849/0.png">
+<meta property="article:published_time" content="2023-02-17T03:44:58.000Z">
+<meta property="article:modified_time" content="2023-02-17T08:23:45.630Z">
+<meta property="article:author" content="noraxu">
+<meta property="article:tag" content="翻译">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.noraxu.online/045a82182849/5.png">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro|Fira+Code|Merriweather|Noto+Serif+SC|Ovo|Source+Code+Pro">
+
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro"> -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script type='text/javascript' src='' async='async'></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<style>
+    hr{
+        margin: 0.4rem 0 1.5rem 0;
+    }
+    .article  svg.fa-external-link-alt{
+        display: none !important;
+    }
+</style>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="戎码科技" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/favicon.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/">首页</a>
+            
+            <a class="navbar-item "
+               href="/all">教程</a>
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            <!-- 
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i> 
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Gatsby">1&nbsp;&nbsp;<span>Gatsby</span></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#介绍">1.1&nbsp;&nbsp;介绍</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#特点">1.2&nbsp;&nbsp;特点</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#demo">1.3&nbsp;&nbsp;demo</a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Next-js">2&nbsp;&nbsp;<span>Next.js</span></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#介绍-1">2.1&nbsp;&nbsp;介绍</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#特点-1">2.2&nbsp;&nbsp;特点</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#demo-1">2.3&nbsp;&nbsp;demo</a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#NuxtJS">3&nbsp;&nbsp;<span>NuxtJS</span></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#介绍-2">3.1&nbsp;&nbsp;介绍</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#demo-2">3.2&nbsp;&nbsp;demo</a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Nest">4&nbsp;&nbsp;<span>Nest</span></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#介绍-3">4.1&nbsp;&nbsp;介绍</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#特点-2">4.2&nbsp;&nbsp;特点</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#demo-3">4.3&nbsp;&nbsp;demo</a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#分析">5&nbsp;&nbsp;<span>分析</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#如何选择适合自己的框架">6&nbsp;&nbsp;<span>如何选择适合自己的框架</span></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#我的建议">6.1&nbsp;&nbsp;我的建议</a>
+                    
+                </div>
+            </div>
+             -->
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/xuxia2013">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            <a class="navbar-item" title="Rss" href="/atom.xml">
+                
+                <i class="fa fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            JavaScript后端框架：Next, Nest, Nuxt… Nust?
+        
+    </h1>
+    
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2023-02-17T03:44:58.000Z" itemprop="datePublished">2月 17 2023</time>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/%E7%BF%BB%E8%AF%91/">翻译</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            14 分钟 读完 (约 2096 字)
+            
+            
+            <span id="/045a82182849/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count"></i>
+            </span>
+            
+        </span>
+        
+        
+
+    </div>
+    
+
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><blockquote>
+<p>原文：<a target="_blank" rel="noopener" href="https://www.twilio.com/blog/comparing-nextjs-nestjs-nuxt-gatsby">https://www.twilio.com/blog/comparing-nextjs-nestjs-nuxt-gatsby</a><br>作者：<a target="_blank" rel="noopener" href="https://github.com/IObert">Marius Obert</a></p>
+</blockquote>
+<p>如果你正在寻找合适的 JavaScript 后端框架，并且面对 Gatsby、Next.js、Nest 和 Nust 等框架不知道如何选择的话，那么不妨进来看看吧。</p>
+<p>下面将分析这些框架的异同，它们的性能特点，受欢迎程度，希望能够帮助你选择最适合你的框架。</p>
+<span id="more"></span>
+
+<p>根据最新的 JavaScript 状态调查，所有这些开源框架都是最受欢迎的后端框架。JS 状态调查显示，Next.js、Gatsby、Nuxt 和 Nest 位列前五。它们排在不败的第一名 Express 的后面，并且还在不断增长。如下图</p>
+<p><img src="/045a82182849/5.png"></p>
+<p>Express 几乎从 Node.js 诞生之初就已经存在，是事实上的标准 JavaScript 框架，它经常被称作许多其他框架的基础。</p>
+<h3 id="Gatsby"><a href="#Gatsby" class="headerlink" title="Gatsby"></a>Gatsby</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>⭐️ 54.1K</p>
+<p>Gatsby 最初在 2015 年被构想为 React Web 应用的静态网站生成框架。Gatsby 主要的应用的技术是 React 和 GraphQL，利用 Gatsby 搭建一个简单的静态站点。已被 Netlify 收购</p>
+<blockquote>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/gatsbyjs/gatsby">https://github.com/gatsbyjs/gatsby</a><br>官网：<a target="_blank" rel="noopener" href="https://www.gatsbyjs.cn/">https://www.gatsbyjs.cn/</a></p>
+</blockquote>
+<p><img src="/045a82182849/3.png"></p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li><p>支持各种数据源： headless CMSs, SaaS services, APIs, databases,your file system……通过 Graphql 更直接的获取数据。</p>
+</li>
+<li><p>丰富的生态系统，庞大的插件库</p>
+</li>
+<li><p>可以灵活地放在最适合您的托管平台：Netlify、Firebase、Azure、AWS、Vercel 或您想要的任何平台</p>
+</li>
+<li><p>支持 cdn</p>
+</li>
+<li><p>该框架不支持自定义后端逻辑</p>
+</li>
+<li><p>Gatsby 最适合个人博客和较小的静态站点，比如公司网站</p>
+</li>
+</ul>
+<h4 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h4><p>一个 404 页面</p>
+<figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">Link</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'gatsby'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">StaticImage</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'gatsby-plugin-image'</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> pageStyles = {</span><br><span class="line">  <span class="hljs-attr">color</span>: <span class="hljs-string">'#232129'</span>,</span><br><span class="line">  <span class="hljs-attr">padding</span>: <span class="hljs-string">'96px'</span>,</span><br><span class="line">  <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'-apple-system, Roboto, sans-serif, serif'</span>,</span><br><span class="line">};</span><br><span class="line"><span class="hljs-keyword">const</span> headingStyles = {</span><br><span class="line">  <span class="hljs-attr">marginTop</span>: <span class="hljs-number">0</span>,</span><br><span class="line">  <span class="hljs-attr">marginBottom</span>: <span class="hljs-number">64</span>,</span><br><span class="line">  <span class="hljs-attr">maxWidth</span>: <span class="hljs-number">320</span>,</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> paragraphStyles = {</span><br><span class="line">  <span class="hljs-attr">marginBottom</span>: <span class="hljs-number">48</span>,</span><br><span class="line">};</span><br><span class="line"><span class="hljs-keyword">const</span> codeStyles = {</span><br><span class="line">  <span class="hljs-attr">color</span>: <span class="hljs-string">'#8A6534'</span>,</span><br><span class="line">  <span class="hljs-attr">padding</span>: <span class="hljs-number">4</span>,</span><br><span class="line">  <span class="hljs-attr">backgroundColor</span>: <span class="hljs-string">'#FFF4DB'</span>,</span><br><span class="line">  <span class="hljs-attr">fontSize</span>: <span class="hljs-string">'1.25rem'</span>,</span><br><span class="line">  <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>,</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> <span class="title function_">NotFoundPage</span> = (<span class="hljs-params"></span>) =&gt; {</span><br><span class="line">  <span class="hljs-keyword">return</span> (</span><br><span class="line">    <span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{pageStyles}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{headingStyles}</span>&gt;</span>Page not found<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">StaticImage</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">        <span class="hljs-attr">alt</span>=<span class="hljs-string">"Clifford, a reddish-brown pitbull"</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">        <span class="hljs-attr">src</span>=<span class="hljs-string">"https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&amp;name=large"</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">      /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{paragraphStyles}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        Sorry 😔, we couldn't find what you were looking for.</span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        {process.env.NODE_ENV === 'development' ? (</span></span><br><span class="line"><span class="hljs-language-xml">          <span class="hljs-tag">&lt;&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">            <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">            Try creating a page in <span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{codeStyles}</span>&gt;</span>src/pages/<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>.</span></span><br><span class="line"><span class="hljs-language-xml">            <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">          <span class="hljs-tag">&lt;/&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        ) : null}</span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span>&gt;</span>Go home<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>.</span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line">    &lt;/main&gt;</span><br><span class="line">  );</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="title class_">NotFoundPage</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="Next-js"><a href="#Next-js" class="headerlink" title="Next.js"></a>Next.js</h3><h4 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h4><p>⭐️ 101K</p>
+<p>Next.js 框架最初于 2016 年发布，Next.js 是一个 React 应用框架。</p>
+<blockquote>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/vercel/next.js">https://github.com/vercel/next.js</a><br>官网：<a target="_blank" rel="noopener" href="https://www.nextjs.cn/">https://www.nextjs.cn/</a></p>
+</blockquote>
+<p><img src="/045a82182849/2.png"></p>
+<p>Next 的 CLI 工具 create-next-app 与 create-react-app 的工作方式相同，允许你启动一个完整的应用程序，其中内置包括图像优化和页面路由等附加功能。<br>Next 是轻量级和易于使用的，可供业余爱好者使用，但也足够强大，可以扩展以供企业使用。Netflix、Hulu、耐克等每天网站访问量达数万人次的大型企业都在使用 Vercel 托管的 Next 应用程序。非常适合有大量更新的网站、大型企业级应用程序。</p>
+<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><ul>
+<li><p>Next.js 支持静态站点生成、服务器端渲染、增量静态重新生成和客户端数据获取。</p>
+</li>
+<li><p>Next.js 的一个独特之处在于其巨大的知名度、庞大的社区和广泛的使用。</p>
+</li>
+<li><p>允许您将其托管在自己的基础设施上</p>
+</li>
+<li><p>该框架中没有状态的概念；需要手动添加一个数据库来存储状态。</p>
+</li>
+</ul>
+<h4 id="demo-1"><a href="#demo-1" class="headerlink" title="demo"></a>demo</h4><p>首页页面</p>
+<figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> <span class="title class_">Head</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'next/head'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> <span class="title class_">Image</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'next/image'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">'../styles/Home.module.css'</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="title function_">Home</span>(<span class="hljs-params"></span>) {</span><br><span class="line">  <span class="hljs-keyword">return</span> (</span><br><span class="line">    <span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.container}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">Head</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Create Next App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Generated by create next app"</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;/<span class="hljs-name">Head</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.main}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.title}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">          Welcome to <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://nextjs.org"</span>&gt;</span>Next.js!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.description}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">          Get started by editing{' '}</span></span><br><span class="line"><span class="hljs-language-xml">          <span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.code}</span>&gt;</span>pages/index.js<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.footer}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">a</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">          <span class="hljs-attr">href</span>=<span class="hljs-string">"https://vercel.com?utm_source=create-next-app&amp;utm_medium=default-template&amp;utm_campaign=create-next-app"</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">          <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">          <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span></span></span></span><br><span class="line"><span class="hljs-tag"><span class="hljs-language-xml">        &gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">          Powered by{' '}</span></span><br><span class="line"><span class="hljs-language-xml">          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.logo}</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/vercel.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Vercel Logo"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">{72}</span> <span class="hljs-attr">height</span>=<span class="hljs-string">{16}</span> /&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">          <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">      <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="NuxtJS"><a href="#NuxtJS" class="headerlink" title="NuxtJS"></a>NuxtJS</h3><h4 id="介绍-2"><a href="#介绍-2" class="headerlink" title="介绍"></a>介绍</h4><p>⭐️ 43.6K</p>
+<p>NuxtJS 最初发布于 2016 年，在多个方面与之前的框架不同。最明显的区别是，你不是用 React 构建，而是在另一个流行的 UI 框架上：Vue.js。但这并不意味着 Nuxt 是 Next.js 的一个移植。Nuxt 在概念上非常不同，它提供所有的渲染选项–甚至是客户端渲染。所以这个框架也可以用于渐进式 Web 应用。</p>
+<blockquote>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/vercel/next.js">https://github.com/vercel/next.js</a><br>官网：<a target="_blank" rel="noopener" href="https://www.nuxtjs.cn/">https://www.nuxtjs.cn/</a></p>
+</blockquote>
+<p><img src="/045a82182849/1.png"></p>
+<p>除此之外，它还带有一个丰富的开发文档，如何添加配置、测试框架、构建框架和组件包等。Nuxt 还带有状态存储功能：Vuex Store。</p>
+<h4 id="demo-2"><a href="#demo-2" class="headerlink" title="demo"></a>demo</h4><p>定义一个页面</p>
+<figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line"> <span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello Nuxters! 👋<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">     This page is rendered on the <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>{{ rendering }}<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"rendering === 'server'"</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">     First load or hard refresh is done on server side.</span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"rendering === 'client'"</span>&gt;</span>Navigation is done on client side.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Refresh the page for server side rendering.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Click the links to see client side rendering.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"></span></span><br><span class="line"><span class="hljs-language-xml">   <span class="hljs-tag">&lt;<span class="hljs-name">NuxtLink</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/about"</span>&gt;</span>About Page<span class="hljs-tag">&lt;/<span class="hljs-name">NuxtLink</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-language-javascript"></span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml"> <span class="title function_">asyncData</span>(<span class="hljs-params"></span>) {</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml">   <span class="hljs-keyword">return</span> {</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml">     <span class="hljs-attr">rendering</span>: process.<span class="hljs-property">server</span> ? <span class="hljs-string">'server'</span> : <span class="hljs-string">'client'</span></span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml">   }</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml"> }</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml">}</span></span></span><br><span class="line"><span class="hljs-language-javascript"><span class="hljs-language-xml"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>ps: 有一个很好的记忆技巧来区分这些听起来相似的框架。Next.js 使用 React，Nuxt 使用 Vue.js。</p>
+<h3 id="Nest"><a href="#Nest" class="headerlink" title="Nest"></a>Nest</h3><h4 id="介绍-3"><a href="#介绍-3" class="headerlink" title="介绍"></a>介绍</h4><p>⭐️ 54.4K</p>
+<p>Nest 是 2018 年推出的,受 Angular 启发的框架，也是这个系列中真正的异类。虽然其他框架都实现了各种渲染策略，但 Nest 旨在成为一个与平台无关的框架。这个用于服务器端应用程序的框架更类似于著名的 Spring 框架，可用于实现微服务。它通过对象关系映射器和许多额外的协议，如 WebSockets、GraphQL 和 MQTT，支持几乎所有流行的数据库管理系统。</p>
+<p>Nest 使用 Express，但也提供了与其他广泛的库的兼容性，例如，Fastify，允许方便地使用第三方插件。</p>
+<blockquote>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/nestjs/nest">https://github.com/nestjs/nest</a><br>官网：<a target="_blank" rel="noopener" href="https://www.nestjs.com.cn/">https://www.nestjs.com.cn/</a></p>
+</blockquote>
+<p><img src="/045a82182849/4.png"></p>
+<h4 id="特点-2"><a href="#特点-2" class="headerlink" title="特点"></a>特点</h4><ul>
+<li><p>有更高的服务器负载，并且可能更难扩展</p>
+</li>
+<li><p>对于一部分后端工程师来说，学习成本低些</p>
+</li>
+</ul>
+<h4 id="demo-3"><a href="#demo-3" class="headerlink" title="demo"></a>demo</h4><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">Module</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">AppController</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./app.controller'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">AppService</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./app.service'</span>;</span><br><span class="line"><span class="hljs-keyword">import</span> { <span class="title class_">ConfigModule</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/config'</span>;</span><br><span class="line"></span><br><span class="line">@<span class="title class_">Module</span>({</span><br><span class="line">  <span class="hljs-attr">imports</span>: [<span class="title class_">ConfigModule</span>.<span class="title function_">forRoot</span>()],</span><br><span class="line">  <span class="hljs-attr">controllers</span>: [<span class="title class_">AppController</span>],</span><br><span class="line">  <span class="hljs-attr">providers</span>: [<span class="title class_">AppService</span>],</span><br><span class="line">})</span><br><span class="line"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="title class_">AppModule</span> {}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>下面是npm的下载数字以及GitHub和Stack Overflow的一些社区统计。</p>
+<p><img src="/045a82182849/6.png"></p>
+<p>这些数据截至2022年12月。</p>
+<p>在几乎所有这些指标中，我们都能看到 Next.js 的领先地位。它拥有最多的下载量、GitHub 星级和分叉，以及 Stack Overflow 上最广泛的知识库。令人惊讶的是，Gatsby 拥有最多的 GitHub 贡献，这表明其丰富的生态系统有多大。起初，与 Gatsby 和 Nuxt 相比，Nest 的周下载量如此之多也令人惊讶，即使其他统计数字非常相似。一个可能的解释是，Nest 是唯一列出的可用于实现后端服务器的框架，因此，没有竞争。即使其他框架不能自由互换，它们都可以用于服务器渲染的 HTML 页面，并可能在某种程度上自食其果。</p>
+<h3 id="如何选择适合自己的框架"><a href="#如何选择适合自己的框架" class="headerlink" title="如何选择适合自己的框架"></a>如何选择适合自己的框架</h3><p>让我们重新审视一下这篇文章的开头。如何选择最适合你的框架？<br>要回答这个问题，你需要问自己以下几个问题：</p>
+<ol>
+<li>你到底想不想建立一个全栈式的应用程序？</li>
+<li>如果是的话，你是想要更多的自由和灵活性，还是更喜欢开箱即用的模块，如果一开始就有的话，你可以插入哪些模块来获得想要的结果？</li>
+<li>如果应用程序不需要全栈开发，根据你对性能和SEO友好性的需求，你更喜欢哪种渲染策略？</li>
+</ol>
+<p>下面的决策树可能对你有点帮助~<br><img src="/045a82182849/0.png"></p>
+<h4 id="我的建议"><a href="#我的建议" class="headerlink" title="我的建议"></a>我的建议</h4><p>如果你想学习新东西，我建议你去看看Next.js。如果你想建立一个利用React的网站，并且具有信息性，没有大量的交互性，如公司网站、博客或产品的登陆页面，它是非常好的。如果你想建立这样的网站，但更喜欢Vue.js，那么选择Nuxt。</p>
+<p>如果符合你的需求，用React或Vue.js建立一个SPA，没有后端框架也是可以的。<br>另一方面，当你想建立一个服务器应用程序时，评估一下你是否想用提供即插即用机制的成熟模块（Nest）来建立，或者你是否想用Express来自己开发一切。</p>
+</body></html>
+
+        
+
+
+
+    
+        
+       
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%E7%BF%BB%E8%AF%91/">#翻译</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/e19032dae9bc/">推荐一个免费好用的下载技术书籍的网站</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/176e453cd681/">浅谈低代码</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!--  -->
+
+
+<div class="comments">
+    <h3 class="title is-4">评论</h3>
+    
+<div id="valine-thread"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread',
+        appId: 'dkfRMMgm7mPAPRSsAiKjuX1R-gzGzoHsz',
+        appKey: 'pnjo7tFMsoXaP1IqVEy1SyTw',
+        notify: true,
+        verify: false,
+        avatar: '',
+        placeholder: '留下点什么吧...',
+        meta: ['nick', 'mail'],
+        visitor: true,
+        lang: ''
+    })
+</script>
+
+
+</div>
+
+
+
+  
+      <div class="toc-table">
+         <p class="head">目录</p>
+          
+          
+          
+          
+          <a class="navbar-item" href="#Gatsby">
+            <span style="opacity: 0">1.</span>
+            &nbsp;&nbsp;<span>Gatsby</span></a>
+          
+          
+          
+          <a class="navbar-item" href="#介绍">
+            <span style="opacity: 0">1.1.</span>
+            &nbsp;&nbsp;介绍</a>
+          
+          
+          
+          <a class="navbar-item" href="#特点">
+            <span style="opacity: 0">1.2.</span>
+            &nbsp;&nbsp;特点</a>
+          
+          
+          
+          <a class="navbar-item" href="#demo">
+            <span style="opacity: 0">1.3.</span>
+            &nbsp;&nbsp;demo</a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#Next-js">
+            <span style="opacity: 0">2.</span>
+            &nbsp;&nbsp;<span>Next.js</span></a>
+          
+          
+          
+          <a class="navbar-item" href="#介绍-1">
+            <span style="opacity: 0">2.1.</span>
+            &nbsp;&nbsp;介绍</a>
+          
+          
+          
+          <a class="navbar-item" href="#特点-1">
+            <span style="opacity: 0">2.2.</span>
+            &nbsp;&nbsp;特点</a>
+          
+          
+          
+          <a class="navbar-item" href="#demo-1">
+            <span style="opacity: 0">2.3.</span>
+            &nbsp;&nbsp;demo</a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#NuxtJS">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>NuxtJS</span></a>
+          
+          
+          
+          <a class="navbar-item" href="#介绍-2">
+            <span style="opacity: 0">3.1.</span>
+            &nbsp;&nbsp;介绍</a>
+          
+          
+          
+          <a class="navbar-item" href="#demo-2">
+            <span style="opacity: 0">3.2.</span>
+            &nbsp;&nbsp;demo</a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#Nest">
+            <span style="opacity: 0">4.</span>
+            &nbsp;&nbsp;<span>Nest</span></a>
+          
+          
+          
+          <a class="navbar-item" href="#介绍-3">
+            <span style="opacity: 0">4.1.</span>
+            &nbsp;&nbsp;介绍</a>
+          
+          
+          
+          <a class="navbar-item" href="#特点-2">
+            <span style="opacity: 0">4.2.</span>
+            &nbsp;&nbsp;特点</a>
+          
+          
+          
+          <a class="navbar-item" href="#demo-3">
+            <span style="opacity: 0">4.3.</span>
+            &nbsp;&nbsp;demo</a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#分析">
+            <span style="opacity: 0">5.</span>
+            &nbsp;&nbsp;<span>分析</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#如何选择适合自己的框架">
+            <span style="opacity: 0">6.</span>
+            &nbsp;&nbsp;<span>如何选择适合自己的框架</span></a>
+          
+          
+          
+          <a class="navbar-item" href="#我的建议">
+            <span style="opacity: 0">6.1.</span>
+            &nbsp;&nbsp;我的建议</a>
+          
+          <p style="margin-top: 15px;text-align: center;  border-top: 2px solid #f0f0f0;">
+            <img src="https://pic.imgdb.cn/item/637adceb16f2c2beb1a8d901.jpg" alt="" width="120" style="padding: 10px 0 0px;">
+          </p>
+      </div>
+  
+
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+       
+        <div class="columns content">
+
+            <div class="column is-narrow has-text-centered" style="display: flex; width: 100%;">
+                <span style="flex: 1">
+                    &copy; 2023
+                    noraxu&nbsp;
+                        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                                target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                </span>
+                <span style="flex: 1">
+                    本站总访问量<span id="busuanzi_value_site_pv" style="color: #3273dc;"></span>次
+                    本站访客数<span id="busuanzi_value_site_uv" style="color: #3273dc;"></span>人次
+                </span>
+
+            </div>
+            
+            <div class="column is-hidden-mobile"></div>
+
+            
+                    
+
+        </div>
+        
+        <div style="justify-content: center;
+        display: flex;
+        align-items: center;">
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>本作品采用<a rel="license noopener"
+                target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+        </div>
+
+        
+       
+
+    </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery > p > .gallery-item').unwrap();
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

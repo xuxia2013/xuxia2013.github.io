@@ -15,8 +15,33 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 22 Feb 2023 04:43:50 GMT</pubDate>
+    <pubDate>Fri, 10 Mar 2023 09:38:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Uniapp如何实现持续定位，全程录音功能</title>
+      <link>http://www.noraxu.online/806c829afb4d/</link>
+      <guid>http://www.noraxu.online/806c829afb4d/</guid>
+      <pubDate>Fri, 10 Mar 2023 07:18:08 GMT</pubDate>
+      
+      <description>uniapp如何实现持续定位，全程录音功能, uniapp开发, 应用, app, vue开发, 开发总结, 后台运行，保活</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/uniapp/">uniapp</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/uniapp/">uniapp</category>
+      
+      <category domain="http://www.noraxu.online/tags/app/">app</category>
+      
+      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
+      
+      
+      <comments>http://www.noraxu.online/806c829afb4d/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>在GitHub上学习系列之AI课程</title>
@@ -425,27 +450,6 @@
       
       
       <comments>http://www.noraxu.online/1a222761d40a/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>如何基于Vue快速搭建可视化大屏平台</title>
-      <link>http://www.noraxu.online/992d13211977/</link>
-      <guid>http://www.noraxu.online/992d13211977/</guid>
-      <pubDate>Fri, 25 Nov 2022 07:21:17 GMT</pubDate>
-      
-      <description>vue,可视化数据大屏, 10 分钟零门槛打造出专业大屏数据展示,数据魅力</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/vue/">vue</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
-      
-      
-      <comments>http://www.noraxu.online/992d13211977/#disqus_thread</comments>
       
     </item>
     

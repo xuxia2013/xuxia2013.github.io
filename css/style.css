@@ -327,7 +327,7 @@ a.tag.article-tag {
 code,
 pre {
   font-size: 0.85rem;
-  font-family: "Source Code Pro", monospace, "Microsoft YaHei"; }
+  font-family: "JetBrains Mono", "Source Code Pro", monospace, "Microsoft YaHei"; }
 
 figure.highlight {
   padding: 0;
@@ -354,7 +354,7 @@ figure.highlight {
     font-size: 0.8rem; }
     figure.highlight figcaption span {
       font-weight: 500;
-      font-family: "Source Code Pro", monospace, "Microsoft YaHei"; }
+      font-family: "JetBrains Mono", "Source Code Pro", monospace, "Microsoft YaHei"; }
     figure.highlight figcaption a {
       float: right;
       color: #9a9a9a; }
@@ -542,6 +542,8 @@ li {
   padding: 10px;
   text-align: center;
   width: 100%; }
+  .article p a.gallery-item img[title='w20'] {
+    width: 20% !important; }
   .article p a.gallery-item img[title='w50'] {
     width: 50% !important; }
   .article p a.gallery-item img[title='w60'] {

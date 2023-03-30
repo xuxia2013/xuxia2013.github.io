@@ -457,6 +457,13 @@
   </url>
   
   <url>
+    <loc>http://www.noraxu.online/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.noraxu.online/tags/webapck/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -527,7 +534,21 @@
   </url>
   
   <url>
-    <loc>http://www.noraxu.online/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>http://www.noraxu.online/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.noraxu.online/tags/ChatGPT/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.noraxu.online/tags/AI/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -556,13 +577,6 @@
   
   <url>
     <loc>http://www.noraxu.online/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -660,6 +674,13 @@
   </url>
   
   <url>
+    <loc>http://www.noraxu.online/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.noraxu.online/tags/flutter/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -694,27 +715,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://www.noraxu.online/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/tags/ChatGPT/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/tags/AI/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -726,6 +726,13 @@
   
   <url>
     <loc>http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.noraxu.online/categories/%E7%BF%BB%E8%AF%91/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -760,7 +767,14 @@
   </url>
   
   <url>
-    <loc>http://www.noraxu.online/categories/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>http://www.noraxu.online/categories/book/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.noraxu.online/categories/ChatGPT-AI-Javascript/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -768,13 +782,6 @@
   
   <url>
     <loc>http://www.noraxu.online/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/categories/book/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -823,6 +830,13 @@
   </url>
   
   <url>
+    <loc>http://www.noraxu.online/categories/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.noraxu.online/categories/flutter/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -852,20 +866,6 @@
   
   <url>
     <loc>http://www.noraxu.online/categories/npm/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/categories/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.noraxu.online/categories/ChatGPT-AI-Javascript/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -15,8 +15,29 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 30 Mar 2023 07:25:06 GMT</pubDate>
+    <pubDate>Thu, 06 Apr 2023 09:51:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何制作数据可视化大屏的城市地图</title>
+      <link>http://www.noraxu.online/b94651a21a4c/</link>
+      <guid>http://www.noraxu.online/b94651a21a4c/</guid>
+      <pubDate>Thu, 06 Apr 2023 07:27:45 GMT</pubDate>
+      
+      <description>vue,城市地图,可视化数据大屏, 10 分钟零门槛打造出专业大屏数据展示,数据魅力</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/vue/">vue</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
+      
+      
+      <comments>http://www.noraxu.online/b94651a21a4c/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>uniapp中接入融云-IM 云服务</title>
@@ -429,29 +450,6 @@
       
       
       <comments>http://www.noraxu.online/1cd3e420554a/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vue cli3整合多应用项目</title>
-      <link>http://www.noraxu.online/9eb64e997ad7/</link>
-      <guid>http://www.noraxu.online/9eb64e997ad7/</guid>
-      <pubDate>Wed, 07 Dec 2022 06:26:55 GMT</pubDate>
-      
-      <description>vue, vue-cli, vue-router,pages, 多页</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/vue/">vue</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/vue/">vue</category>
-      
-      <category domain="http://www.noraxu.online/tags/vue-cli/">vue-cli</category>
-      
-      
-      <comments>http://www.noraxu.online/9eb64e997ad7/#disqus_thread</comments>
       
     </item>
     

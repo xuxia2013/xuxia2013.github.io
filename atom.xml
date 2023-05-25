@@ -15,8 +15,45 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 22 May 2023 02:40:00 GMT</pubDate>
+    <pubDate>Thu, 25 May 2023 09:09:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>用NodeJs来实现爬虫Medium会员文章</title>
+      <link>http://www.noraxu.online/c53c25628429/</link>
+      <guid>http://www.noraxu.online/c53c25628429/</guid>
+      <pubDate>Thu, 25 May 2023 08:09:56 GMT</pubDate>
+      
+      <description>前端开发，NodeJs开发, eggJs开发， puppeteer, nextjs, vercel</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/eggJs/">eggJs</category>
+      
+      <category domain="http://www.noraxu.online/categories/Puppeteer/">Puppeteer</category>
+      
+      <category domain="http://www.noraxu.online/categories/NodeJs/">NodeJs</category>
+      
+      <category domain="http://www.noraxu.online/categories/nextjs/">nextjs</category>
+      
+      <category domain="http://www.noraxu.online/categories/vercel/">vercel</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/Puppeteer/">Puppeteer</category>
+      
+      <category domain="http://www.noraxu.online/tags/NodeJs/">NodeJs</category>
+      
+      <category domain="http://www.noraxu.online/tags/eggJs/">eggJs</category>
+      
+      <category domain="http://www.noraxu.online/tags/vercel/">vercel</category>
+      
+      <category domain="http://www.noraxu.online/tags/nextjs/">nextjs</category>
+      
+      
+      <comments>http://www.noraxu.online/c53c25628429/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Top VS Code扩展插件</title>
@@ -416,29 +453,6 @@
       
       
       <comments>http://www.noraxu.online/7fc1b806681b/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>UI自动化测试工具Puppeteer</title>
-      <link>http://www.noraxu.online/f0142a5f6230/</link>
-      <guid>http://www.noraxu.online/f0142a5f6230/</guid>
-      <pubDate>Mon, 19 Dec 2022 04:09:39 GMT</pubDate>
-      
-      <description>Puppeteer, 工具, 自动化测试</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">工具, 自动化测试</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/Puppeteer/">Puppeteer</category>
-      
-      <category domain="http://www.noraxu.online/tags/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">UI自动化测试工具</category>
-      
-      
-      <comments>http://www.noraxu.online/f0142a5f6230/#disqus_thread</comments>
       
     </item>
     

@@ -15,8 +15,29 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 15 Jun 2023 03:57:58 GMT</pubDate>
+    <pubDate>Fri, 16 Jun 2023 08:26:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我的 Obsidian 笔记跨设备同步方案</title>
+      <link>http://www.noraxu.online/0b3df051877a/</link>
+      <guid>http://www.noraxu.online/0b3df051877a/</guid>
+      <pubDate>Fri, 16 Jun 2023 06:23:54 GMT</pubDate>
+      
+      <description>工具, Obsidian, 笔记, 同步</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <comments>http://www.noraxu.online/0b3df051877a/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>8 个 GitHub Repos 让你成为更好的开发者</title>
@@ -429,27 +450,6 @@
       
       
       <comments>http://www.noraxu.online/6d12e01e8e04/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>嵌入式持久性数据库 —— Nedb</title>
-      <link>http://www.noraxu.online/caaf024d487a/</link>
-      <guid>http://www.noraxu.online/caaf024d487a/</guid>
-      <pubDate>Mon, 19 Dec 2022 04:36:04 GMT</pubDate>
-      
-      <description>嵌入式持久性数据库, Nedb</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <comments>http://www.noraxu.online/caaf024d487a/#disqus_thread</comments>
       
     </item>
     

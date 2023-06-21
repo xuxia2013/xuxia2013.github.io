@@ -15,8 +15,31 @@
     <atom:link href="http://www.noraxu.online/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 21 Jun 2023 06:43:38 GMT</pubDate>
+    <pubDate>Wed, 21 Jun 2023 08:40:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>什么？听说你还没用上GitHub Copilot</title>
+      <link>http://www.noraxu.online/80546147781c/</link>
+      <guid>http://www.noraxu.online/80546147781c/</guid>
+      <pubDate>Wed, 21 Jun 2023 07:28:22 GMT</pubDate>
+      
+      <description>工具</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.online/categories/GitHub/">GitHub</category>
+      
+      <category domain="http://www.noraxu.online/categories/Copilot/">Copilot</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <comments>http://www.noraxu.online/80546147781c/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023年这7个项目可以帮助你成为前端高手</title>
@@ -24,12 +47,17 @@
       <guid>http://www.noraxu.online/2f1004620f41/</guid>
       <pubDate>Wed, 21 Jun 2023 03:09:35 GMT</pubDate>
       
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;无论你是编程的新手还是已经是这个行业的资深开发者，学习新的概念和语言/框架，都必须跟上快速变化的步伐。&lt;br&gt;以 React 为例–四年前由 Facebook 开放源代码，它已经成为全球 JavaScript 开发者的头号选择。&lt;br&gt;当然，Vue 和 Angular 也有其追随者基础。还有 Svelte 和 Next.js 或 Nuxt.js 等通用框架。还有 Gatsby……还有，还有，还有。&lt;br&gt;如果你想成为一名专业的 JavaScript 开发者，你至少应该有一些不同框架和库的经验–除了用好的、老的 JS 做功课。&lt;/p&gt;
-&lt;p&gt;为了帮助你成为一个前端高手，我收集了九个项目，每个项目都有一个特定的主题和一个不同的 JavaScript 框架或库作为技术栈，你可以建立并添加到你的计划中。记住，没有什么比实际造东西更能帮助你。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      <description>JavaScript, vue, react, 前端框架</description>
       
       
       
       
+      <category domain="http://www.noraxu.online/categories/JavaScript/">JavaScript</category>
+      
+      <category domain="http://www.noraxu.online/categories/Vue/">Vue</category>
+      
+      
+      <category domain="http://www.noraxu.online/tags/JavaScript/">JavaScript</category>
       
       
       <comments>http://www.noraxu.online/2f1004620f41/#disqus_thread</comments>
@@ -426,27 +454,6 @@
       
       
       <comments>http://www.noraxu.online/0a8b6d1c1e48/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>如何免费快速搭建一个在线购物商城</title>
-      <link>http://www.noraxu.online/1325858d7087/</link>
-      <guid>http://www.noraxu.online/1325858d7087/</guid>
-      <pubDate>Mon, 19 Dec 2022 08:24:30 GMT</pubDate>
-      
-      <description>工具，wordpress, WooCommerce, cms</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.online/categories/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <category domain="http://www.noraxu.online/tags/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <comments>http://www.noraxu.online/1325858d7087/#disqus_thread</comments>
       
     </item>
     

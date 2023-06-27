@@ -15,8 +15,52 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 21 Jun 2023 09:23:18 GMT</pubDate>
+    <pubDate>Tue, 27 Jun 2023 08:35:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2款免费好用的AI工具</title>
+      <link>http://www.noraxu.cn/558ff96f4752/</link>
+      <guid>http://www.noraxu.cn/558ff96f4752/</guid>
+      <pubDate>Tue, 27 Jun 2023 08:10:30 GMT</pubDate>
+      
+      <description>AI</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/AI/">AI</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/AI/">AI</category>
+      
+      
+      <comments>http://www.noraxu.cn/558ff96f4752/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于npm你知道多少？</title>
+      <link>http://www.noraxu.cn/0c73e67dfff5/</link>
+      <guid>http://www.noraxu.cn/0c73e67dfff5/</guid>
+      <pubDate>Tue, 27 Jun 2023 07:26:06 GMT</pubDate>
+      
+      <description>npm是Node.js的包管理器，用于安装、管理和共享JavaScript代码包。它是Node.js生态系统中最受欢迎的工具之一。</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/npm/">npm</category>
+      
+      <category domain="http://www.noraxu.cn/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/npm/">npm</category>
+      
+      
+      <comments>http://www.noraxu.cn/0c73e67dfff5/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>什么？听说你还没用上GitHub Copilot</title>
@@ -412,48 +456,6 @@
       
       
       <comments>http://www.noraxu.cn/176e453cd681/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>自建图床</title>
-      <link>http://www.noraxu.cn/2cea3fa6c2b4/</link>
-      <guid>http://www.noraxu.cn/2cea3fa6c2b4/</guid>
-      <pubDate>Wed, 18 Jan 2023 09:02:05 GMT</pubDate>
-      
-      <description>工具</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E5%B7%A5%E5%85%B7/">工具</category>
-      
-      
-      <comments>http://www.noraxu.cn/2cea3fa6c2b4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>学习资料：Rust-未来前端基础设施</title>
-      <link>http://www.noraxu.cn/0a8b6d1c1e48/</link>
-      <guid>http://www.noraxu.cn/0a8b6d1c1e48/</guid>
-      <pubDate>Thu, 05 Jan 2023 06:51:35 GMT</pubDate>
-      
-      <description>rust, 学习资料</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E5%AD%A6%E4%B9%A0/">学习</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E5%AD%A6%E4%B9%A0/">学习</category>
-      
-      
-      <comments>http://www.noraxu.cn/0a8b6d1c1e48/#disqus_thread</comments>
       
     </item>
     

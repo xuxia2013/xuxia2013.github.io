@@ -15,8 +15,26 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 28 Jun 2023 02:18:04 GMT</pubDate>
+    <pubDate>Thu, 29 Jun 2023 07:57:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>PC网站如何实现微信扫码登录</title>
+      <link>http://www.noraxu.cn/338a7dc81d45/</link>
+      <guid>http://www.noraxu.cn/338a7dc81d45/</guid>
+      <pubDate>Thu, 29 Jun 2023 02:25:36 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;不管你运营什么类型的网站，用户注册都是很重要的一个环节，用户注册的方式也是很多的，比如邮箱注册、手机号注册、第三方授权登录等。其中，第三方授权登录是最常用的一种方式，微信扫码登录是其中的一种，但是微信扫码登录的实现方式有很多种，比如公众号扫码，小程序扫码，网页扫码等。&lt;/p&gt;
+&lt;p&gt;本文将介绍一种简单的实现方式。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/338a7dc81d45/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2款免费好用的AI工具</title>
@@ -435,27 +453,6 @@
       
       
       <comments>http://www.noraxu.cn/045a82182849/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>浅谈低代码</title>
-      <link>http://www.noraxu.cn/176e453cd681/</link>
-      <guid>http://www.noraxu.cn/176e453cd681/</guid>
-      <pubDate>Thu, 16 Feb 2023 03:57:45 GMT</pubDate>
-      
-      <description>低代码, Low-Code, 开源低代码框架推荐, 定制化表单, 管理后台, Appsmith, ToolJet, Budibase, LowCodeEngine</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</category>
-      
-      
-      <comments>http://www.noraxu.cn/176e453cd681/#disqus_thread</comments>
       
     </item>
     

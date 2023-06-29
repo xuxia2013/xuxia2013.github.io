@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>2款免费好用的AI工具 - 戎码科技</title>
+<title>PC网站如何实现微信扫码登录 - 戎码科技</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="baidu-site-verification" content="code-CAxafSB2TA" />
 <meta name="sogou_site_verification" content="yzpQyJWE4Y" />
@@ -12,33 +12,36 @@
 
 
 
-<meta name="description" content="AI">
 
 
 
-<meta name="keywords" content="AI">
 
-
-
-    <meta name="description" content="AI">
+    <meta name="description" content="不管你运营什么类型的网站，用户注册都是很重要的一个环节，用户注册的方式也是很多的，比如邮箱注册、手机号注册、第三方授权登录等。其中，第三方授权登录是最常用的一种方式，微信扫码登录是其中的一种，但是微信扫码登录的实现方式有很多种，比如公众号扫码，小程序扫码，网页扫码等。 本文将介绍一种简单的实现方式。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2款免费好用的AI工具">
-<meta property="og:url" content="http://www.noraxu.cn/558ff96f4752/index.html">
+<meta property="og:title" content="PC网站如何实现微信扫码登录">
+<meta property="og:url" content="http://www.noraxu.cn/338a7dc81d45/index.html">
 <meta property="og:site_name" content="戎码科技">
-<meta property="og:description" content="AI">
+<meta property="og:description" content="不管你运营什么类型的网站，用户注册都是很重要的一个环节，用户注册的方式也是很多的，比如邮箱注册、手机号注册、第三方授权登录等。其中，第三方授权登录是最常用的一种方式，微信扫码登录是其中的一种，但是微信扫码登录的实现方式有很多种，比如公众号扫码，小程序扫码，网页扫码等。 本文将介绍一种简单的实现方式。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/2.png">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/-1.jpg">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/3.png">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/0.png">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/5.png">
-<meta property="og:image" content="http://www.noraxu.cn/558ff96f4752/0-1.png">
-<meta property="article:published_time" content="2023-06-27T08:10:30.000Z">
-<meta property="article:modified_time" content="2023-06-28T02:18:04.586Z">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c1.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c2.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/2.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/1.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/1.jpg">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/3.jpg">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/2.jpg">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c3.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c8.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c4.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c5.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c6.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c7.png">
+<meta property="article:published_time" content="2023-06-29T02:25:36.000Z">
+<meta property="article:modified_time" content="2023-06-29T07:57:16.082Z">
 <meta property="article:author" content="noraxu">
-<meta property="article:tag" content="AI">
+<meta property="article:tag" content="web, frontend, webpack, vue, javascript, react, uniapp, css">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.noraxu.cn/558ff96f4752/2.png">
+<meta name="twitter:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c1.png">
 
 
 
@@ -147,21 +150,19 @@
                     
                     
                     
-                    <a class="navbar-item" href="#百晓生">1&nbsp;&nbsp;<span>百晓生</span></a>
-                    
-                    
-                    
-                    <a class="navbar-item" href="#直接扫码直达">1.1&nbsp;&nbsp;直接扫码直达</a>
+                    <a class="navbar-item" href="#技术栈">1&nbsp;&nbsp;<span>技术栈</span></a>
                     
                     
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#周报生成器">2&nbsp;&nbsp;<span>周报生成器</span></a>
+                    <a class="navbar-item" href="#实现思路">2&nbsp;&nbsp;<span>实现思路</span></a>
                     
                     
+                    <hr class="navbar-divider">
                     
-                    <a class="navbar-item" href="#直接扫码直达-1">2.1&nbsp;&nbsp;直接扫码直达</a>
+                    
+                    <a class="navbar-item" href="#实现步骤">3&nbsp;&nbsp;<span>实现步骤</span></a>
                     
                 </div>
             </div>
@@ -189,30 +190,25 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            2款免费好用的AI工具
+            PC网站如何实现微信扫码登录
         
     </h1>
     
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
             
-                <time datetime="2023-06-27T08:10:30.000Z" itemprop="datePublished">6月 27 2023</time>
+                <time datetime="2023-06-29T02:25:36.000Z" itemprop="datePublished">6月 29 2023</time>
             
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/AI/">AI</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            2 分钟 读完 (约 262 字)
+            7 分钟 读完 (约 981 字)
             
             
-            <span id="/558ff96f4752/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+            <span id="/338a7dc81d45/"  class="leancloud_visitors" data-flag-title="Your Article Title">
                 <em class="post-meta-item-text">阅读量 </em>
                 <i class="leancloud-visitors-count"></i>
             </span>
@@ -226,19 +222,53 @@
 
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><p>下面给大家分享的网站都是良心网站，可以让国内用户免费使用chatgpt，大家请不要恶意使用！！！</p>
+        <html><head></head><body><p>不管你运营什么类型的网站，用户注册都是很重要的一个环节，用户注册的方式也是很多的，比如邮箱注册、手机号注册、第三方授权登录等。其中，第三方授权登录是最常用的一种方式，微信扫码登录是其中的一种，但是微信扫码登录的实现方式有很多种，比如公众号扫码，小程序扫码，网页扫码等。</p>
+<p>本文将介绍一种简单的实现方式。</p>
 <span id="more"></span>
 
-<h3 id="百晓生"><a href="#百晓生" class="headerlink" title="百晓生"></a>百晓生</h3><p>该网站无需注册即可免费使用，大家打开网站即可使用, 电脑手机都能用。</p>
-<p><img src="/558ff96f4752/2.png"></p>
-<p><img src="/558ff96f4752/-1.jpg" title="w50"></p>
-<p>强大且多元化的AI工具箱，提供高质量的AI服务，可以帮助用户更好地完成各种任务<br>工具箱包括小红书文案生成工具，自动生成吸引人的小红书文案，适合小红书营销的朋友。还有英文翻译，程序员、代码优化可以帮你检查并且优化代码。还有很多有趣的工具，大家可以自己去探索。</p>
-<p><img src="/558ff96f4752/3.png"></p>
-<h4 id="直接扫码直达"><a href="#直接扫码直达" class="headerlink" title="直接扫码直达"></a>直接扫码直达</h4><p><img src="/558ff96f4752/0.png" title="w20"></p>
-<h3 id="周报生成器"><a href="#周报生成器" class="headerlink" title="周报生成器"></a>周报生成器</h3><p>一写周报就头大？让它来帮你生成完整周报. </p>
-<p>输入：修复bug<br><img src="/558ff96f4752/5.png"></p>
-<p>是不是感觉很爽。</p>
-<h4 id="直接扫码直达-1"><a href="#直接扫码直达-1" class="headerlink" title="直接扫码直达"></a>直接扫码直达</h4><p><img src="/558ff96f4752/0-1.png" title="w20"></p>
+<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><ul>
+<li>后端：NodeJs / 企业级框架 Egg.js</li>
+<li>前端：Vue</li>
+<li>微信小程序：uni-app</li>
+<li>数据库：MySQL</li>
+</ul>
+<h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><ol>
+<li>PC 端网站生成一个二维码，定时 3s 轮询请求接口，判断用户是否扫码，如果扫码，则返回用户的微信信息。</li>
+<li>用户微信扫码后，会跳转到微信小程序，小程序打开点击注册按钮，会获取到用户的微信信息，然后将用户信息发送到后端。</li>
+<li>后端接收到用户信息后，判断用户是否已经注册，如果已经注册，则直接登录，如果没有注册，则将用户信息 openid 和 mobile 保存到数据库中，新建用户，生成一个 token，返回给 PC 端，展示用户登录成功。</li>
+<li>微信小程序展示用户扫码成功。</li>
+</ol>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><ul>
+<li><p>需要申请一个微信小程序，用于扫码登录，申请地址：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/">https://mp.weixin.qq.com/</a></p>
+</li>
+<li><p>建表</p>
+</li>
+</ul>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c1.png"></p>
+<ul>
+<li>PC 端网站生成二维码</li>
+</ul>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c2.png"></p>
+<p>实现效果如下：</p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/2.png" title="w50"></p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/1.png"></p>
+<ul>
+<li>微信小程序扫码登录</li>
+</ul>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/1.jpg" title="w30"><br><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/3.jpg" title="w30"><br><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/2.jpg" title="w30"></p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c3.png"></p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c8.png"></p>
+<ul>
+<li>后端接口实现</li>
+</ul>
+<p>路由：app/router.js</p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c4.png"></p>
+<ul>
+<li>生成带唯一 scene 参数的小程序码</li>
+</ul>
+<p>app/controller/login.js</p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c5.png"></p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c6.png"><br><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/PC-%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E7%99%BB%E5%BD%95/c7.png"></p>
 </body></html>
 
         
@@ -250,22 +280,14 @@
        
     </div>
     
-    <div class="columns is-variable is-1 is-multiline is-mobile">
-    
-        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/AI/">#AI</a></span>
-    
-    </div>
-    
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
-            
-            <a href="/338a7dc81d45/">PC网站如何实现微信扫码登录</a>
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/0c73e67dfff5/">关于npm你知道多少？</a>
+            <a href="/558ff96f4752/">2款免费好用的AI工具</a>
             
         </span>
     </div>
@@ -284,28 +306,23 @@
           
           
           
-          <a class="navbar-item" href="#百晓生">
+          <a class="navbar-item" href="#技术栈">
             <span style="opacity: 0">1.</span>
-            &nbsp;&nbsp;<span>百晓生</span></a>
-          
-          
-          
-          <a class="navbar-item" href="#直接扫码直达">
-            <span style="opacity: 0">1.1.</span>
-            &nbsp;&nbsp;直接扫码直达</a>
+            &nbsp;&nbsp;<span>技术栈</span></a>
           
           
           
           
-          <a class="navbar-item" href="#周报生成器">
+          <a class="navbar-item" href="#实现思路">
             <span style="opacity: 0">2.</span>
-            &nbsp;&nbsp;<span>周报生成器</span></a>
+            &nbsp;&nbsp;<span>实现思路</span></a>
           
           
           
-          <a class="navbar-item" href="#直接扫码直达-1">
-            <span style="opacity: 0">2.1.</span>
-            &nbsp;&nbsp;直接扫码直达</a>
+          
+          <a class="navbar-item" href="#实现步骤">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>实现步骤</span></a>
           
          
       </div>

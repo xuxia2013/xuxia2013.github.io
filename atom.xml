@@ -15,7 +15,7 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 29 Jun 2023 08:46:09 GMT</pubDate>
+    <pubDate>Thu, 29 Jun 2023 08:49:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,12 +24,23 @@
       <guid>http://www.noraxu.cn/338a7dc81d45/</guid>
       <pubDate>Thu, 29 Jun 2023 02:25:36 GMT</pubDate>
       
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;不管你运营什么类型的网站，用户注册都是很重要的一个环节，用户注册的方式也是很多的，比如邮箱注册、手机号注册、第三方授权登录等。其中，第三方授权登录是最常用的一种方式，微信扫码登录是其中的一种，但是微信扫码登录的实现方式有很多种，比如公众号扫码，小程序扫码，网页扫码等。&lt;/p&gt;
-&lt;p&gt;本文将介绍一种简单的实现方式。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      <description>PC网站如何实现微信扫码登录</description>
       
       
       
       
+      <category domain="http://www.noraxu.cn/categories/uniapp/">uniapp</category>
+      
+      <category domain="http://www.noraxu.cn/categories/vue/">vue</category>
+      
+      <category domain="http://www.noraxu.cn/categories/eggjs/">eggjs</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/uniapp/">uniapp</category>
+      
+      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
+      
+      <category domain="http://www.noraxu.cn/tags/eggjs/">eggjs</category>
       
       
       <comments>http://www.noraxu.cn/338a7dc81d45/#disqus_thread</comments>

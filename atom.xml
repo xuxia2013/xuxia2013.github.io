@@ -15,8 +15,29 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 29 Jun 2023 08:49:28 GMT</pubDate>
+    <pubDate>Mon, 03 Jul 2023 07:19:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>8个JavaScript技巧</title>
+      <link>http://www.noraxu.cn/75609faca357/</link>
+      <guid>http://www.noraxu.cn/75609faca357/</guid>
+      <pubDate>Mon, 03 Jul 2023 06:55:09 GMT</pubDate>
+      
+      <description>JavaScript</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/JavaScript/">JavaScript</category>
+      
+      
+      <comments>http://www.noraxu.cn/75609faca357/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>PC网站如何实现微信扫码登录</title>
@@ -443,27 +464,6 @@
       
       
       <comments>http://www.noraxu.cn/e19032dae9bc/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>JavaScript后端框架：Next, Nest, Nuxt… Nust?</title>
-      <link>http://www.noraxu.cn/045a82182849/</link>
-      <guid>http://www.noraxu.cn/045a82182849/</guid>
-      <pubDate>Fri, 17 Feb 2023 03:44:58 GMT</pubDate>
-      
-      <description>JavaScript后端框架, Next, Nest, Nuxt, Nust</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <comments>http://www.noraxu.cn/045a82182849/#disqus_thread</comments>
       
     </item>
     

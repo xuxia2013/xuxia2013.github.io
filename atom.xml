@@ -15,8 +15,25 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 05 Jul 2023 07:01:10 GMT</pubDate>
+    <pubDate>Fri, 07 Jul 2023 04:29:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>做一个游戏小项目有多简单？</title>
+      <link>http://www.noraxu.cn/717f27dc65d0/</link>
+      <guid>http://www.noraxu.cn/717f27dc65d0/</guid>
+      <pubDate>Fri, 07 Jul 2023 03:20:48 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;认识一个朋友，学了很多年的 python, 还停留在 helloworld 阶段，每次拿起又放下，是不是很熟悉？每天都在想，我要学编程，我要学编程，但是又不知道从何学起，学了一点又不知道怎么用，这样的循环往复，最后就放弃了。其实任何知识的学习一定是源于内心的真实的喜欢，带给你正向的热情和感动。才会让你一直坚持下去。不管 debugger 多少次，bug 多少次，都不会放弃。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/717f27dc65d0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023年你需要知道的10个有用的CSS工具</title>
@@ -441,29 +458,6 @@
       
       
       <comments>http://www.noraxu.cn/392cbd981ca7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>前端初学者如何接入ChatGPT</title>
-      <link>http://www.noraxu.cn/25633ba1e544/</link>
-      <guid>http://www.noraxu.cn/25633ba1e544/</guid>
-      <pubDate>Tue, 21 Feb 2023 09:27:35 GMT</pubDate>
-      
-      <description>ChatGPT, AI, Javascript</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/ChatGPT-AI-Javascript/">ChatGPT, AI, Javascript</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/ChatGPT/">ChatGPT</category>
-      
-      <category domain="http://www.noraxu.cn/tags/AI/">AI</category>
-      
-      
-      <comments>http://www.noraxu.cn/25633ba1e544/#disqus_thread</comments>
       
     </item>
     

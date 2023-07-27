@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>做一个游戏小项目有多简单？ - 戎码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="code-CAxafSB2TA" />
+<meta name="sogou_site_verification" content="yzpQyJWE4Y" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+
+
+    <meta name="description" content="认识一个朋友，学了很多年的 python, 还停留在 helloworld 阶段，每次拿起又放下，是不是很熟悉？每天都在想，我要学编程，我要学编程，但是又不知道从何学起，学了一点又不知道怎么用，这样的循环往复，最后就放弃了。其实任何知识的学习一定是源于内心的真实的喜欢，带给你正向的热情和感动。才会让你一直坚持下去。不管 debugger 多少次，bug 多少次，都不会放弃。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="做一个游戏小项目有多简单？">
+<meta property="og:url" content="http://www.noraxu.cn/717f27dc65d0/index.html">
+<meta property="og:site_name" content="戎码科技">
+<meta property="og:description" content="认识一个朋友，学了很多年的 python, 还停留在 helloworld 阶段，每次拿起又放下，是不是很熟悉？每天都在想，我要学编程，我要学编程，但是又不知道从何学起，学了一点又不知道怎么用，这样的循环往复，最后就放弃了。其实任何知识的学习一定是源于内心的真实的喜欢，带给你正向的热情和感动。才会让你一直坚持下去。不管 debugger 多少次，bug 多少次，都不会放弃。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/1.png">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/2.png">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/4.png">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/5.png">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/1.gif">
+<meta property="og:image" content="https://www.noraxu.cn/717f27dc65d0/6.png">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F%E5%B0%8F%E9%A1%B9%E7%9B%AE%E6%9C%89%E5%A4%9A%E7%AE%80%E5%8D%95/-1.jpg?x-oss-process=image/resize,w_400">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/ercode.jpg?x-oss-process=image/resize,w_200,h_200">
+<meta property="article:published_time" content="2023-07-07T03:20:48.000Z">
+<meta property="article:modified_time" content="2023-07-26T09:41:45.312Z">
+<meta property="article:author" content="noraxu">
+<meta property="article:tag" content="web, frontend, webpack, vue, javascript, react, uniapp, css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.noraxu.cn/717f27dc65d0/1.png">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono|Source+Serif+Pro|Fira+Code|Merriweather|Noto+Serif+SC|Ovo|Source+Code+Pro">
+
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro"> -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+
+
+<script type='text/javascript' src='' async='async'></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<style>
+    hr{
+        margin: 0.4rem 0 1.5rem 0;
+    }
+    .article  svg.fa-external-link-alt{
+        display: none !important;
+    }
+</style>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="戎码科技" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/favicon.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/">首页</a>
+            
+            <a class="navbar-item "
+               href="/all">教程</a>
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            <!-- 
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i> 
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Pacman">1&nbsp;&nbsp;<span>Pacman</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Snake-Game">2&nbsp;&nbsp;<span>Snake Game</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#俄罗斯方块">3&nbsp;&nbsp;<span>俄罗斯方块</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#2048">4&nbsp;&nbsp;<span>2048</span></a>
+                    
+                </div>
+            </div>
+             -->
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/xuxia2013">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            <a class="navbar-item" title="Rss" href="/atom.xml">
+                
+                <i class="fa fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            做一个游戏小项目有多简单？
+        
+    </h1>
+    
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2023-07-07T03:20:48.000Z" itemprop="datePublished">7月 7 2023</time>
+            
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            5 分钟 读完 (约 820 字)
+            
+            
+            <span id="/717f27dc65d0/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count"></i>
+            </span>
+            
+        </span>
+        
+        
+
+    </div>
+    
+
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>认识一个朋友，学了很多年的 python, 还停留在 helloworld 阶段，每次拿起又放下，是不是很熟悉？每天都在想，我要学编程，我要学编程，但是又不知道从何学起，学了一点又不知道怎么用，这样的循环往复，最后就放弃了。其实任何知识的学习一定是源于内心的真实的喜欢，带给你正向的热情和感动。才会让你一直坚持下去。不管 debugger 多少次，bug 多少次，都不会放弃。</p>
+<span id="more"></span>
+
+<p>很多人对编程，代码有着自然的畏惧，其实编程是一件很有趣的事情，只要你找到了适合自己的方式，你就会爱上它。</p>
+<p><strong>作为前端开发者，你不妨尝试着用前端技术开发一个小型的游戏项目来提升自己的技能和乐趣。</strong></p>
+<h3 id="Pacman"><a href="#Pacman" class="headerlink" title="Pacman"></a>Pacman</h3><p>比如这款游戏，基于HTML5的吃豆人游戏(本游戏由 passer-by.com 制作)，你可以在这里玩到：<a target="_blank" rel="noopener" href="https://passer-by.com/pacman/">https://passer-by.com/pacman/</a></p>
+<p><img src="https://www.noraxu.cn/717f27dc65d0/1.png"></p>
+<p>你可以看到这款游戏，仅仅用了html5,js来完成的。内置了12个关卡，游戏还是十分流畅的。有兴趣可以一边玩一玩，看看源码。</p>
+<p><img src="https://www.noraxu.cn/717f27dc65d0/2.png"></p>
+<p>源码在此：<a target="_blank" rel="noopener" href="https://github.com/mumuy/pacman"><code>https://github.com/mumuy/pacman</code></a></p>
+<h3 id="Snake-Game"><a href="#Snake-Game" class="headerlink" title="Snake Game"></a>Snake Game</h3><p><img src="https://www.noraxu.cn/717f27dc65d0/4.png"><br>当年这款游戏多火啊，很多手机都内置了这款贪吃蛇游戏，嗯那还是诺基亚手机的时代。同样的html5+js 就可以完成这款游戏。</p>
+<p><img src="https://www.noraxu.cn/717f27dc65d0/5.png"></p>
+<p>玩一玩：<a target="_blank" rel="noopener" href="https://rabiroshan.github.io/snake_game/">https://rabiroshan.github.io/snake_game/</a></p>
+<p>源码在此：<a target="_blank" rel="noopener" href="https://github.com/RabiRoshan/snake_game"><code>https://github.com/RabiRoshan/snake_game</code></a></p>
+<h3 id="俄罗斯方块"><a href="#俄罗斯方块" class="headerlink" title="俄罗斯方块"></a>俄罗斯方块</h3><p><img src="https://www.noraxu.cn/717f27dc65d0/1.gif"><br>《俄罗斯方块》（Tetris）是一款由俄罗斯人阿列克谢·帕基特诺夫于1984年6月发明的休闲游戏。 游戏框架使用的是 React + Redux，其中再加入了 Immutable，以及一些 ES6 的语法。</p>
+<p>玩一玩：<a target="_blank" rel="noopener" href="https://chvin.github.io/react-tetris/">https://chvin.github.io/react-tetris/</a><br>源码：<a target="_blank" rel="noopener" href="https://github.com/chvin/react-tetris"><code>https://github.com/chvin/react-tetris</code></a></p>
+<h3 id="2048"><a href="#2048" class="headerlink" title="2048"></a>2048</h3><p><img src="https://www.noraxu.cn/717f27dc65d0/6.png"></p>
+<p>2048是前几年流行的一款益智类单机游戏， 游戏的规则十分简单，合并消除，看你能活多久。</p>
+<p>玩一玩：<a target="_blank" rel="noopener" href="https://play2048.co/">https://play2048.co/</a><br>源码：<a target="_blank" rel="noopener" href="https://github.com/gabrielecirulli/2048"><code>https://github.com/gabrielecirulli/2048</code></a></p>
+<p>今天介绍都的二维小游戏，如果你感兴趣，可以自己尝试着开发一个，这样你会发现，原来编程是这么有趣的一件事情。<br>喜欢请点个赞。后期会给大家介绍3d游戏开发，敬请期待。</p>
+<p><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F%E5%B0%8F%E9%A1%B9%E7%9B%AE%E6%9C%89%E5%A4%9A%E7%AE%80%E5%8D%95/-1.jpg?x-oss-process=image/resize,w_400"></p>
+<p>公号同步更新，欢迎关注 👻<br><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/ercode.jpg?x-oss-process=image/resize,w_200,h_200"></p>
+</body></html>
+
+        
+
+
+
+    
+        
+       
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/653093f5e8b2/">uniapp大项目如何瘦身</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/81fc7c0f9e5d/">2023年你需要知道的10个有用的CSS工具</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!--  -->
+
+
+
+
+  
+      <div class="toc-table">
+         <p class="head">目录</p>
+          
+          
+          
+          
+          <a class="navbar-item" href="#Pacman">
+            <span style="opacity: 0">1.</span>
+            &nbsp;&nbsp;<span>Pacman</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#Snake-Game">
+            <span style="opacity: 0">2.</span>
+            &nbsp;&nbsp;<span>Snake Game</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#俄罗斯方块">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>俄罗斯方块</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#2048">
+            <span style="opacity: 0">4.</span>
+            &nbsp;&nbsp;<span>2048</span></a>
+          
+         
+      </div>
+  
+
+  <p style="
+  position: fixed;
+  border: 4px solid #f0f0f0;
+  border-radius: 15px;
+  left: 20px; width: 120px;
+  text-align: center;
+  padding: 5px 10px;
+  bottom: 30px;">
+    
+    <img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/QRcode_SP%20%E2%80%94%201.png" alt="" width="120" style="padding: 10px 0 0px;">
+  </p>
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div style="text-align: center;">
+        <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>本作品采用<a rel="license noopener"
+                target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+            <div class="columns content">
+
+            <div class="column is-narrow has-text-centered" style="display: flex; width: 100%;">
+                <span style="flex: 1">
+                    &copy; 2023
+                    noraxu&nbsp;
+                        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                                target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                </span>
+                <span style="flex: 1">
+                    <!-- 本站总访问量<span id="busuanzi_value_site_pv" style="color: #3273dc;"></span>次 -->
+                    <!-- 本站访客数<span id="busuanzi_value_site_uv" style="color: #3273dc;"></span>人次 -->
+                </span>
+
+            </div>
+            
+            <div class="column is-hidden-mobile"></div>
+
+            
+                    
+
+        </div>
+        
+        <div style="justify-content: center;
+        display: flex;
+        align-items: center;">
+           
+        </div>
+
+        
+       
+
+    </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery > p > .gallery-item').unwrap();
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

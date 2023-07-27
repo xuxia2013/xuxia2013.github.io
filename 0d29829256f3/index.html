@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>用uniapp开发一个新闻小程序 - 戎码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="code-CAxafSB2TA" />
+<meta name="sogou_site_verification" content="yzpQyJWE4Y" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="微信小程序开发，uniapp开发">
+
+
+
+<meta name="keywords" content="uniapp, 微信小程序, vue">
+
+
+
+    <meta name="description" content="微信小程序开发，uniapp开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用uniapp开发一个新闻小程序">
+<meta property="og:url" content="http://www.noraxu.cn/0d29829256f3/index.html">
+<meta property="og:site_name" content="戎码科技">
+<meta property="og:description" content="微信小程序开发，uniapp开发">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/632a8d0716f2c2beb1aa9bf4.jpg">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6331152716f2c2beb159d276.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6331152716f2c2beb159d26e.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6331157f16f2c2beb15a32d2.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6331152716f2c2beb159d260.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/633117df16f2c2beb15d1525.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/632a862a16f2c2beb1a2a50f.jpg">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6331152716f2c2beb159d27e.png">
+<meta property="article:published_time" content="2023-07-26T09:41:45.540Z">
+<meta property="article:modified_time" content="2023-07-26T09:41:45.540Z">
+<meta property="article:author" content="noraxu">
+<meta property="article:tag" content="uniapp">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="微信小程序">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/632a8d0716f2c2beb1aa9bf4.jpg">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono|Source+Serif+Pro|Fira+Code|Merriweather|Noto+Serif+SC|Ovo|Source+Code+Pro">
+
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro"> -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+
+
+<script type='text/javascript' src='' async='async'></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<style>
+    hr{
+        margin: 0.4rem 0 1.5rem 0;
+    }
+    .article  svg.fa-external-link-alt{
+        display: none !important;
+    }
+</style>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="戎码科技" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/favicon.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/">首页</a>
+            
+            <a class="navbar-item "
+               href="/all">教程</a>
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            <!-- 
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i> 
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#成果">1&nbsp;&nbsp;<span>成果</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#准备">2&nbsp;&nbsp;<span>准备</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#开发工具">3&nbsp;&nbsp;<span>开发工具</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#学习路线">4&nbsp;&nbsp;<span>学习路线</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#创建项目">5&nbsp;&nbsp;<span>创建项目</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#添加uni-ui">6&nbsp;&nbsp;<span>添加uni-ui</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#配置">7&nbsp;&nbsp;<span>配置</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#token">8&nbsp;&nbsp;<span>token</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#首页">9&nbsp;&nbsp;<span>首页</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#点赞收藏转发代码">10&nbsp;&nbsp;<span>点赞收藏转发代码</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#运行项目">11&nbsp;&nbsp;<span>运行项目</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#预览">12&nbsp;&nbsp;<span>预览</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#上传代码">13&nbsp;&nbsp;<span>上传代码</span></a>
+                    
+                </div>
+            </div>
+             -->
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/xuxia2013">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            <a class="navbar-item" title="Rss" href="/atom.xml">
+                
+                <i class="fa fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            用uniapp开发一个新闻小程序
+        
+    </h1>
+    
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2023-07-26T09:41:45.540Z" itemprop="datePublished">7月 26 2023</time>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/uniapp/">uniapp</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            7 分钟 读完 (约 1091 字)
+            
+            
+            <span id="/0d29829256f3/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count"></i>
+            </span>
+            
+        </span>
+        
+        
+
+    </div>
+    
+
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>目前市面上各种「跨平台」开发解决方案层出不穷，比较有代表性的就是： UniApp、Flutter、 React Native、Taro、Weex等等。UniAPP 是基于「 Vue + 微信小程序 」语言体系，开发人员学习成本低上手快，对于是很多中小型企业，因为短小快，省去很多人工成本，也不失为最佳的选择。很多政企项目也开始使用了：<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/case.html">案例</a></p>
+<p>此前，本人是<a target="_blank" rel="noopener" href="https://www.cnblogs.com/"><code>博客园</code></a>的深度用户，也苦于没有安卓小应用，做了一个小程序。每天刷刷看文章。使用了官方开发接口，没有后端和数据库，0成本做了一个使用频繁的微信小程序，感兴趣就往下看吧</p>
+<span id="more"></span>
+<h3 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h3><p><img src="https://pic.imgdb.cn/item/632a8d0716f2c2beb1aa9bf4.jpg" title="w50"></p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
+<li><p>cnblogs API KEY 申请：<a target="_blank" rel="noopener" href="https://oauth.cnblogs.com/">https://oauth.cnblogs.com/</a></p>
+</li>
+<li><p>注册一个微信小程序 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/cgi-bin/wx?token=&amp;lang=zh_CN">地址</a></p>
+</li>
+<li><p>api接口文档：<a target="_blank" rel="noopener" href="https://api.cnblogs.com/help">https://api.cnblogs.com/help</a></p>
+</li>
+</ul>
+<h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html"><code>微信开发者工具</code></a></p>
+</li>
+<li><p><code>[uniapp官方编辑器]</code>(<a target="_blank" rel="noopener" href="https://www.dcloud.io/hbuilderx.html">https://www.dcloud.io/hbuilderx.html</a>)</p>
+</li>
+</ul>
+<h3 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h3><p>没有接触过 Vue.js，有 html、css、JavaScript 的基础也可以<br>如果你有过h5、原生小程序、mpvue等的开发经验，也可以无缝衔接到 uni-app，几乎没有额外的学习成本</p>
+<ul>
+<li>大体了解Vue.js 语法</li>
+<li>学习创建运行 uni-app 项目：了解 uni-app 组件、路由等知识，开发过程中需要注意的是uni-app中对vue语法的兼容性 </li>
+<li>学会使用官方工具 HBuilder </li>
+<li>自己开发个小功能看看效果</li>
+<li>根据项目情况，继续补充 ES6、NPM 等知识</li>
+<li>项目打包并上线到各平台</li>
+</ul>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p>在点击工具栏里的文件 -&gt; 新建 -&gt; 项目：<br>输入项目名称，项目地址</p>
+<p><img src="https://pic.imgdb.cn/item/6331152716f2c2beb159d276.png"></p>
+<p>创建完成后目录结构如下</p>
+<p><img src="https://pic.imgdb.cn/item/6331152716f2c2beb159d26e.png"></p>
+<h3 id="添加uni-ui"><a href="#添加uni-ui" class="headerlink" title="添加uni-ui"></a>添加uni-ui</h3><p>打开连接；<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?id=55">https://ext.dcloud.net.cn/plugin?id=55</a></p>
+<p>点击导入插件：</p>
+<p><img src="https://pic.imgdb.cn/item/6331157f16f2c2beb15a32d2.png"></p>
+<p>出现uni_modules文件夹：<br><img src="https://pic.imgdb.cn/item/6331152716f2c2beb159d260.png" title="w50"></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>登录微信小程序后台</p>
+<ul>
+<li><p>开发者-开发管理-开发者ID (AppID 小程序ID、AppSecret小程序密钥	)</p>
+<p><img src="https://pic.imgdb.cn/item/633117df16f2c2beb15d1525.png"></p>
+</li>
+<li><p>小程序代码上传-IP白名单添加本地ip</p>
+</li>
+<li><p>服务器域名-request合法域名:</p>
+</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://account.cnblogs.com/">https://account.cnblogs.com</a><br><a target="_blank" rel="noopener" href="https://api.cnblogs.com/">https://api.cnblogs.com</a></p>
+</blockquote>
+<h3 id="token"><a href="#token" class="headerlink" title="token"></a>token</h3><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="title function_">getToken</span>(<span class="hljs-params"></span>) {</span><br><span class="line">	<span class="hljs-keyword">const</span> token = <span class="hljs-keyword">await</span> <span class="title function_">requestFn</span>({</span><br><span class="line">		<span class="hljs-attr">url</span>: <span class="hljs-string">'/token'</span>,</span><br><span class="line">		<span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,</span><br><span class="line">		<span class="hljs-attr">data</span>: {</span><br><span class="line">			<span class="hljs-attr">client_id</span>: <span class="hljs-string">''</span>,</span><br><span class="line">			<span class="hljs-attr">client_secret</span>: <span class="hljs-string">''</span>,</span><br><span class="line">			<span class="hljs-attr">grant_type</span>: <span class="hljs-string">'client_credentials'</span></span><br><span class="line">		},</span><br><span class="line">		<span class="hljs-attr">header</span>: {</span><br><span class="line">			<span class="hljs-string">'content-type'</span>: <span class="hljs-string">'application/x-www-form-urlencoded'</span></span><br><span class="line">		}</span><br><span class="line">	})</span><br><span class="line">	uni.<span class="title function_">setStorageSync</span>(<span class="hljs-string">'token'</span>, token.<span class="hljs-property">access_token</span>);</span><br><span class="line">	uni.<span class="title function_">setStorageSync</span>(<span class="hljs-string">'expires_in'</span>, token.<span class="hljs-property">expires_in</span>);</span><br><span class="line">	uni.<span class="title function_">setStorageSync</span>(<span class="hljs-string">'expires_in_start'</span>, <span class="title function_">moment</span>().<span class="title function_">valueOf</span>());</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> baseUrl = <span class="hljs-string">'https://api.cnblogs.com'</span>;</span><br><span class="line"><span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="title function_">requestFn</span>(<span class="hljs-params">options</span>) {</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> uni.<span class="title function_">request</span>({</span><br><span class="line">		...options,</span><br><span class="line">		<span class="hljs-attr">url</span>: baseUrl + options.<span class="hljs-property">url</span>,</span><br><span class="line">		<span class="hljs-attr">header</span>: {</span><br><span class="line">			...{</span><br><span class="line">				<span class="hljs-string">'Authorization'</span>: <span class="hljs-string">`Bearer <span class="hljs-subst">${uni.getStorageSync(<span class="hljs-string">'token'</span>)}</span>`</span></span><br><span class="line">			},</span><br><span class="line">			...options.<span class="hljs-property">header</span></span><br><span class="line">		},</span><br><span class="line"></span><br><span class="line">	}).<span class="title function_">then</span>(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> {</span><br><span class="line">		<span class="hljs-comment">// console.log(res, 'res')</span></span><br><span class="line">		<span class="hljs-keyword">const</span> data = res[<span class="hljs-number">1</span>]</span><br><span class="line">		<span class="hljs-keyword">if</span> (data.<span class="hljs-property">statusCode</span> == <span class="hljs-number">200</span>) {</span><br><span class="line">			<span class="hljs-keyword">return</span> data.<span class="hljs-property">data</span></span><br><span class="line">		}</span><br><span class="line">		uni.<span class="title function_">showToast</span>({</span><br><span class="line">			<span class="hljs-attr">title</span>: data.<span class="hljs-property">data</span>.<span class="hljs-property">title</span>,</span><br><span class="line">			<span class="hljs-attr">icon</span>: <span class="hljs-string">'none'</span>,</span><br><span class="line">			<span class="hljs-attr">duration</span>: <span class="hljs-number">4000</span></span><br><span class="line">		});</span><br><span class="line">		<span class="hljs-keyword">return</span> data.<span class="hljs-property">data</span></span><br><span class="line">	})</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>page.json</p>
+<figure class="highlight json hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-punctuation">{</span></span><br><span class="line">	<span class="hljs-attr">"pages"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span> </span><br><span class="line">		<span class="hljs-punctuation">{</span></span><br><span class="line">			<span class="hljs-attr">"path"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"pages/index/home"</span><span class="hljs-punctuation">,</span></span><br><span class="line">			<span class="hljs-attr">"style"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span></span><br><span class="line">				<span class="hljs-attr">"navigationBarTitleText"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"代码改变世界"</span></span><br><span class="line">			<span class="hljs-punctuation">}</span></span><br><span class="line">		<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-punctuation">{</span></span><br><span class="line">			<span class="hljs-attr">"path"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"pages/index/details"</span><span class="hljs-punctuation">,</span></span><br><span class="line">			<span class="hljs-attr">"style"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span></span><br><span class="line">				<span class="hljs-attr">"navigationBarTitleText"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"博文"</span></span><br><span class="line">			<span class="hljs-punctuation">}</span></span><br><span class="line">		<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-punctuation">{</span></span><br><span class="line">			<span class="hljs-attr">"path"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"pages/index/author"</span><span class="hljs-punctuation">,</span></span><br><span class="line">			<span class="hljs-attr">"style"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span></span><br><span class="line">				<span class="hljs-attr">"navigationBarTitleText"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span></span><br><span class="line">			<span class="hljs-punctuation">}</span></span><br><span class="line">		<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-punctuation">{</span></span><br><span class="line">			<span class="hljs-attr">"path"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"pages/index/search"</span><span class="hljs-punctuation">,</span></span><br><span class="line">			<span class="hljs-attr">"style"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span></span><br><span class="line">				<span class="hljs-attr">"navigationBarTitleText"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"找找看"</span></span><br><span class="line">			<span class="hljs-punctuation">}</span></span><br><span class="line">		<span class="hljs-punctuation">}</span></span><br><span class="line">	<span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span></span><br><span class="line">	<span class="hljs-attr">"globalStyle"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span></span><br><span class="line">		<span class="hljs-attr">"navigationBarTextStyle"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"black"</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-attr">"navigationBarTitleText"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"uni-app"</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-attr">"navigationBarBackgroundColor"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"#F8F8F8"</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-attr">"backgroundColor"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"#F8F8F8"</span><span class="hljs-punctuation">,</span></span><br><span class="line">		<span class="hljs-attr">"onReachBottomDistance"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span></span><br><span class="line">	<span class="hljs-punctuation">}</span></span><br><span class="line"><span class="hljs-punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h3><figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class="tabs"&gt;</span><br><span class="line">		&lt;scroll-view id="tab-bar" class="scroll-h" :scroll-x="true" :show-scrollbar="false" :scroll-into-view="scrollInto"&gt;</span><br><span class="line">			&lt;view v-for="(tab, index) in tabBars" :key="tab.id" class="uni-tab-item" :id="tab.id" :data-current="index" @click="ontabtap"&gt;</span><br><span class="line">				&lt;text class="uni-tab-item-title" :class="tabIndex == index ? 'uni-tab-item-title-active' : ''"&gt;{{ tab.name }}&lt;/text&gt;</span><br><span class="line">			&lt;/view&gt;</span><br><span class="line">		&lt;/scroll-view&gt;</span><br><span class="line">		&lt;view class="line-h"&gt;&lt;/view&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;swiper :current="tabIndex" class="swiper-box" style="flex: 1;" :duration="300" @change="ontabchange"&gt;</span><br><span class="line">			&lt;swiper-item class="swiper-item" v-for="(tab, index1) in newsList" :key="index1"&gt;</span><br><span class="line">				&lt;scroll-view class="scroll-v list" @scroll="scroll" enableBackToTop="true" :scroll-top="120" scroll-y @scrolltolower="loadMore(index1)"&gt;</span><br><span class="line">					&lt;uni-search-bar v-if="isShowSearch" @confirm="search" v-model="keyword"&gt;&lt;/uni-search-bar&gt;</span><br><span class="line">					&lt;media-item :listData="tab.data" /&gt;</span><br><span class="line">					&lt;view class="loading-more" v-if="tab.isLoading || tab.data.length &gt; 4"&gt;</span><br><span class="line">						&lt;text class="loading-more-text"&gt;{{ tab.loadingText }}&lt;/text&gt;</span><br><span class="line">					&lt;/view&gt;</span><br><span class="line">				&lt;/scroll-view&gt;</span><br><span class="line">			&lt;/swiper-item&gt;</span><br><span class="line">		&lt;/swiper&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="点赞收藏转发代码"><a href="#点赞收藏转发代码" class="headerlink" title="点赞收藏转发代码"></a>点赞收藏转发代码</h3><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">onShareAppMessage</span>(<span class="hljs-params"></span>) {</span><br><span class="line">	<span class="hljs-keyword">return</span> {</span><br><span class="line">		<span class="hljs-attr">title</span>: <span class="hljs-string">'代码改变世界'</span>,</span><br><span class="line">		<span class="hljs-attr">path</span>: <span class="hljs-string">'/pages/index/home'</span>,</span><br><span class="line">		<span class="hljs-attr">imageUrl</span>: <span class="hljs-string">'../../static/logo.png'</span></span><br><span class="line">	};</span><br><span class="line">},</span><br><span class="line"><span class="title function_">onShareTimeline</span>(<span class="hljs-params"></span>) {</span><br><span class="line">	<span class="hljs-keyword">return</span> {</span><br><span class="line">		<span class="hljs-attr">title</span>: <span class="hljs-string">'代码改变世界'</span>,</span><br><span class="line">		<span class="hljs-attr">path</span>: <span class="hljs-string">'/pages/index/home'</span>,</span><br><span class="line">		<span class="hljs-attr">imageUrl</span>: <span class="hljs-string">'../../static/logo.png'</span></span><br><span class="line">	};</span><br><span class="line">},</span><br><span class="line"><span class="title function_">onAddToFavorites</span>(<span class="hljs-params"></span>) {</span><br><span class="line">	<span class="hljs-keyword">return</span> {</span><br><span class="line">		<span class="hljs-attr">title</span>: <span class="hljs-string">'代码改变世界'</span>,</span><br><span class="line">		<span class="hljs-attr">path</span>: <span class="hljs-string">'/pages/index/home'</span>,</span><br><span class="line">		<span class="hljs-attr">imageUrl</span>: <span class="hljs-string">'../../static/logo.png'</span></span><br><span class="line">	};</span><br><span class="line">},</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h3><p>微信小程序运行：进入项目，点击工具栏的运行 -&gt; 运行到小程序模拟器 -&gt; 选择微信开发者工具。</p>
+<p>运行后，目录会多一个，这里就是各端编译后的文件：<code>unpackage\dist\dev\mp-weixin</code></p>
+<p>注意：需要打开微信开发工具，然后 设置 -&gt; 安全 -&gt; 服务端口 -&gt; 开启。否则连接接不上。</p>
+<h3 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h3><p><img src="https://pic.imgdb.cn/item/632a862a16f2c2beb1a2a50f.jpg" title="w50"></p>
+<h3 id="上传代码"><a href="#上传代码" class="headerlink" title="上传代码"></a>上传代码</h3><p>通过微信开发者工具发布-审核通过后-后台点击上线</p>
+<p><img src="https://pic.imgdb.cn/item/6331152716f2c2beb159d27e.png"></p>
+<p>读完全文的你不会找不到<a target="_blank" rel="noopener" href="https://github.com/xuxia2013/cnblog-app">源码</a></p>
+</body></html>
+
+        
+
+
+
+    
+        
+       
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/uniapp/">#uniapp</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/vue/">#vue</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">#小程序</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">#微信小程序</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2663bc10b94f/">Typescript 4.5 | 新特性总结来了</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/55bacf7b4140/">为什么说数字输入框是最最难用</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!--  -->
+
+
+
+
+  
+      <div class="toc-table">
+         <p class="head">目录</p>
+          
+          
+          
+          
+          <a class="navbar-item" href="#成果">
+            <span style="opacity: 0">1.</span>
+            &nbsp;&nbsp;<span>成果</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#准备">
+            <span style="opacity: 0">2.</span>
+            &nbsp;&nbsp;<span>准备</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#开发工具">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>开发工具</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#学习路线">
+            <span style="opacity: 0">4.</span>
+            &nbsp;&nbsp;<span>学习路线</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#创建项目">
+            <span style="opacity: 0">5.</span>
+            &nbsp;&nbsp;<span>创建项目</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#添加uni-ui">
+            <span style="opacity: 0">6.</span>
+            &nbsp;&nbsp;<span>添加uni-ui</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#配置">
+            <span style="opacity: 0">7.</span>
+            &nbsp;&nbsp;<span>配置</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#token">
+            <span style="opacity: 0">8.</span>
+            &nbsp;&nbsp;<span>token</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#首页">
+            <span style="opacity: 0">9.</span>
+            &nbsp;&nbsp;<span>首页</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#点赞收藏转发代码">
+            <span style="opacity: 0">10.</span>
+            &nbsp;&nbsp;<span>点赞收藏转发代码</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#运行项目">
+            <span style="opacity: 0">11.</span>
+            &nbsp;&nbsp;<span>运行项目</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#预览">
+            <span style="opacity: 0">12.</span>
+            &nbsp;&nbsp;<span>预览</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#上传代码">
+            <span style="opacity: 0">13.</span>
+            &nbsp;&nbsp;<span>上传代码</span></a>
+          
+         
+      </div>
+  
+
+  <p style="
+  position: fixed;
+  border: 4px solid #f0f0f0;
+  border-radius: 15px;
+  left: 20px; width: 120px;
+  text-align: center;
+  padding: 5px 10px;
+  bottom: 30px;">
+    
+    <img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/QRcode_SP%20%E2%80%94%201.png" alt="" width="120" style="padding: 10px 0 0px;">
+  </p>
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div style="text-align: center;">
+        <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>本作品采用<a rel="license noopener"
+                target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+            <div class="columns content">
+
+            <div class="column is-narrow has-text-centered" style="display: flex; width: 100%;">
+                <span style="flex: 1">
+                    &copy; 2023
+                    noraxu&nbsp;
+                        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                                target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                </span>
+                <span style="flex: 1">
+                    <!-- 本站总访问量<span id="busuanzi_value_site_pv" style="color: #3273dc;"></span>次 -->
+                    <!-- 本站访客数<span id="busuanzi_value_site_uv" style="color: #3273dc;"></span>人次 -->
+                </span>
+
+            </div>
+            
+            <div class="column is-hidden-mobile"></div>
+
+            
+                    
+
+        </div>
+        
+        <div style="justify-content: center;
+        display: flex;
+        align-items: center;">
+           
+        </div>
+
+        
+       
+
+    </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery > p > .gallery-item').unwrap();
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

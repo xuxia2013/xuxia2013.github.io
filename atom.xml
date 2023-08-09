@@ -15,8 +15,135 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 07 Jul 2023 04:29:14 GMT</pubDate>
+    <pubDate>Wed, 09 Aug 2023 02:59:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>好玩有趣的HTML标签</title>
+      <link>http://www.noraxu.cn/91c73277218b/</link>
+      <guid>http://www.noraxu.cn/91c73277218b/</guid>
+      <pubDate>Wed, 09 Aug 2023 02:38:23 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;我发现很多前端开发工程师会自己基于成熟的 ui 库开封装一些组件，而不是使用原始的 HTML。希望本文能为你的项目带来些新思路。&lt;/p&gt;
+&lt;p&gt;下面列举些 9 个有趣的 HTML 标签和属性，也希望你来补充些，请留言告诉我。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/91c73277218b/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>React18 | useTransition</title>
+      <link>http://www.noraxu.cn/c89b26425a28/</link>
+      <guid>http://www.noraxu.cn/c89b26425a28/</guid>
+      <pubDate>Thu, 27 Jul 2023 06:50:41 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;React18 所做的最有趣的实现是并发性，我们可以优先考虑某些状态而不是其他状态，以便我们可以保持网站的整体用户体验响应。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/c89b26425a28/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Typescript 4.5 | 新特性总结来了</title>
+      <link>http://www.noraxu.cn/2663bc10b94f/</link>
+      <guid>http://www.noraxu.cn/2663bc10b94f/</guid>
+      <pubDate>Thu, 27 Jul 2023 06:43:19 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Typescript 4.5 提供了许多有用的功能。我们应该花些时间了解这些功能，以便在日常编码中加以利用，提高代码质量。这些功能有助于优化代码，提高代码的可读性和可维护性。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/2663bc10b94f/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>用uniapp开发一个新闻小程序</title>
+      <link>http://www.noraxu.cn/0d29829256f3/</link>
+      <guid>http://www.noraxu.cn/0d29829256f3/</guid>
+      <pubDate>Wed, 26 Jul 2023 09:41:45 GMT</pubDate>
+      
+      <description>微信小程序开发，uniapp开发</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/uniapp/">uniapp</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/uniapp/">uniapp</category>
+      
+      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
+      
+      <category domain="http://www.noraxu.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</category>
+      
+      <category domain="http://www.noraxu.cn/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</category>
+      
+      
+      <comments>http://www.noraxu.cn/0d29829256f3/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>为什么说数字输入框是最最难用</title>
+      <link>http://www.noraxu.cn/55bacf7b4140/</link>
+      <guid>http://www.noraxu.cn/55bacf7b4140/</guid>
+      <pubDate>Wed, 26 Jul 2023 09:41:45 GMT</pubDate>
+      
+      <description>数字输入框</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
+      
+      
+      <comments>http://www.noraxu.cn/55bacf7b4140/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>uniapp大项目如何瘦身</title>
+      <link>http://www.noraxu.cn/653093f5e8b2/</link>
+      <guid>http://www.noraxu.cn/653093f5e8b2/</guid>
+      <pubDate>Wed, 26 Jul 2023 09:41:45 GMT</pubDate>
+      
+      <description>微信小程序开发，uniapp开发</description>
+      
+      
+      
+      
+      <category domain="http://www.noraxu.cn/categories/uniapp/">uniapp</category>
+      
+      
+      <category domain="http://www.noraxu.cn/tags/uniapp/">uniapp</category>
+      
+      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
+      
+      <category domain="http://www.noraxu.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</category>
+      
+      <category domain="http://www.noraxu.cn/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</category>
+      
+      
+      <comments>http://www.noraxu.cn/653093f5e8b2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>做一个游戏小项目有多简单？</title>
@@ -134,9 +261,9 @@
       
       
       
-      <category domain="http://www.noraxu.cn/categories/npm/">npm</category>
-      
       <category domain="http://www.noraxu.cn/categories/JavaScript/">JavaScript</category>
+      
+      <category domain="http://www.noraxu.cn/categories/npm/">npm</category>
       
       
       <category domain="http://www.noraxu.cn/tags/npm/">npm</category>
@@ -305,13 +432,13 @@
       
       
       
-      <category domain="http://www.noraxu.cn/categories/eggJs/">eggJs</category>
-      
-      <category domain="http://www.noraxu.cn/categories/Puppeteer/">Puppeteer</category>
-      
       <category domain="http://www.noraxu.cn/categories/NodeJs/">NodeJs</category>
       
+      <category domain="http://www.noraxu.cn/categories/eggJs/">eggJs</category>
+      
       <category domain="http://www.noraxu.cn/categories/nextjs/">nextjs</category>
+      
+      <category domain="http://www.noraxu.cn/categories/Puppeteer/">Puppeteer</category>
       
       <category domain="http://www.noraxu.cn/categories/vercel/">vercel</category>
       
@@ -328,136 +455,6 @@
       
       
       <comments>http://www.noraxu.cn/c53c25628429/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Top VS Code扩展插件</title>
-      <link>http://www.noraxu.cn/83a0a39efd12/</link>
-      <guid>http://www.noraxu.cn/83a0a39efd12/</guid>
-      <pubDate>Mon, 22 May 2023 01:49:14 GMT</pubDate>
-      
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Visual Studio Code 无疑是当今最流行的代码编辑器。它是微软为 Windows、Linux 和 macOS 开发的轻型代码编辑器。它包括各种功能，如语法高亮，调试，智能代码完成，片段，嵌入式 Git，代码重构等。与市场上的其他代码编辑器相比，VS Code 提供了更好的性能和稳定性。&lt;br&gt;下面就来分享开发必备的 VS Code 插件！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-      
-      
-      
-      
-      
-      
-      <comments>http://www.noraxu.cn/83a0a39efd12/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>我最近在用的5个好东西</title>
-      <link>http://www.noraxu.cn/6cee586f56d9/</link>
-      <guid>http://www.noraxu.cn/6cee586f56d9/</guid>
-      <pubDate>Wed, 17 May 2023 08:03:46 GMT</pubDate>
-      
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/geekculture/the-5-paid-subscriptions-i-actually-use-in-2023-as-a-software-engineer-9418515a315a&quot;&gt;https://medium.com/geekculture/the-5-paid-subscriptions-i-actually-use-in-2023-as-a-software-engineer-9418515a315a&lt;/a&gt;&lt;br&gt;作者：&lt;a href=&quot;https://medium.com/@jacobistyping&quot;&gt;Jacob Bennett&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;以下是我在2022-23年花钱购买的、真正改善了我作为一个软件工程师工作效率的东西&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <comments>http://www.noraxu.cn/6cee586f56d9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>如何制作数据可视化大屏的城市地图</title>
-      <link>http://www.noraxu.cn/b94651a21a4c/</link>
-      <guid>http://www.noraxu.cn/b94651a21a4c/</guid>
-      <pubDate>Thu, 06 Apr 2023 07:27:45 GMT</pubDate>
-      
-      <description>vue,城市地图,可视化数据大屏, 10 分钟零门槛打造出专业大屏数据展示,数据魅力</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/vue/">vue</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
-      
-      
-      <comments>http://www.noraxu.cn/b94651a21a4c/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>uniapp中接入融云-IM 云服务</title>
-      <link>http://www.noraxu.cn/6d2ad211fa52/</link>
-      <guid>http://www.noraxu.cn/6d2ad211fa52/</guid>
-      <pubDate>Fri, 17 Mar 2023 03:01:43 GMT</pubDate>
-      
-      <description>uni-app如何集成实现音视频通话, 如何在uniapp快速实现一对一音视频通话应用, uniapp开发, 应用, app, vue开发, 开发总结</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/uniapp/">uniapp</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/uniapp/">uniapp</category>
-      
-      <category domain="http://www.noraxu.cn/tags/app/">app</category>
-      
-      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
-      
-      
-      <comments>http://www.noraxu.cn/6d2ad211fa52/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Uniapp如何实现持续定位，全程录音功能</title>
-      <link>http://www.noraxu.cn/806c829afb4d/</link>
-      <guid>http://www.noraxu.cn/806c829afb4d/</guid>
-      <pubDate>Fri, 10 Mar 2023 07:18:08 GMT</pubDate>
-      
-      <description>uniapp如何实现持续定位，全程录音功能, uniapp开发, 应用, app, vue开发, 开发总结, 后台运行，保活</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/uniapp/">uniapp</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/uniapp/">uniapp</category>
-      
-      <category domain="http://www.noraxu.cn/tags/app/">app</category>
-      
-      <category domain="http://www.noraxu.cn/tags/vue/">vue</category>
-      
-      
-      <comments>http://www.noraxu.cn/806c829afb4d/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>在GitHub上学习系列之AI课程</title>
-      <link>http://www.noraxu.cn/392cbd981ca7/</link>
-      <guid>http://www.noraxu.cn/392cbd981ca7/</guid>
-      <pubDate>Wed, 22 Feb 2023 04:08:07 GMT</pubDate>
-      
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;火爆了的ChatGPT，兴奋劲过去了之后谈谈我的一些看法&lt;/p&gt;
-&lt;p&gt;很多人说会替代程序员，且不说程序员每天能敲多少代码，大量时间都在跟产品撕逼，写文档，真正写代码时间是很少的，其次，我乐观看未来20年应该还不能替代程序员，程序员这工作还没有那么大的风险。不过，对于这样提高效率的工具，大家应该学习然后用起来，省了很多脑细胞不是嘛？后台很多小伙伴问怎么学习ai技术，下面提供些吧，或许你有更好的教程，也请发出来看看，ai对一般人是遥不可及的，学习路线漫漫长，技术的魅力就在每一次深入研究后发掘中，顿悟后那点点自豪感吧。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-      
-      
-      
-      
-      
-      
-      <comments>http://www.noraxu.cn/392cbd981ca7/#disqus_thread</comments>
       
     </item>
     

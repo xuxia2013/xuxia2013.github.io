@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>好玩有趣的HTML标签 - 戎码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="code-CAxafSB2TA" />
+<meta name="sogou_site_verification" content="yzpQyJWE4Y" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+
+
+    <meta name="description" content="我发现很多前端开发工程师会自己基于成熟的 ui 库开封装一些组件，而不是使用原始的 HTML。希望本文能为你的项目带来些新思路。 下面列举些 9 个有趣的 HTML 标签和属性，也希望你来补充些，请留言告诉我。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="好玩有趣的HTML标签">
+<meta property="og:url" content="http://www.noraxu.cn/91c73277218b/index.html">
+<meta property="og:site_name" content="戎码科技">
+<meta property="og:description" content="我发现很多前端开发工程师会自己基于成熟的 ui 库开封装一些组件，而不是使用原始的 HTML。希望本文能为你的项目带来些新思路。 下面列举些 9 个有趣的 HTML 标签和属性，也希望你来补充些，请留言告诉我。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/1.webp">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/2.gif">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/3.webp">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/4.gif">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/6.gif">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/7.webp">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/8.gif">
+<meta property="og:image" content="http://www.noraxu.cn/91c73277218b/9.gif">
+<meta property="og:image" content="https://nora-blog.oss-cn-beijing.aliyuncs.com/ercode.jpg?x-oss-process=image/resize,w_200,h_200">
+<meta property="article:published_time" content="2023-08-09T02:38:23.000Z">
+<meta property="article:modified_time" content="2023-08-09T02:59:07.685Z">
+<meta property="article:author" content="noraxu">
+<meta property="article:tag" content="web, frontend, webpack, vue, javascript, react, uniapp, css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.noraxu.cn/91c73277218b/1.webp">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono|Source+Serif+Pro|Fira+Code|Merriweather|Noto+Serif+SC|Ovo|Source+Code+Pro">
+
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC|Ovo|Source+Code+Pro"> -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+
+
+<script type='text/javascript' src='' async='async'></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<style>
+    hr{
+        margin: 0.4rem 0 1.5rem 0;
+    }
+    .article  svg.fa-external-link-alt{
+        display: none !important;
+    }
+</style>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="戎码科技" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/favicon.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/">首页</a>
+            
+            <a class="navbar-item "
+               href="/all">教程</a>
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            <!-- 
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i> 
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#1-Progress-bar-进度条">1&nbsp;&nbsp;<span>1. Progress bar 进度条</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#2-Expansion-panel-折叠面板">2&nbsp;&nbsp;<span>2. Expansion panel (折叠面板)</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#3-Dialog-对话框">3&nbsp;&nbsp;<span>3. Dialog 对话框</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#4-Color-selection-颜色选择器">4&nbsp;&nbsp;<span>4. Color selection 颜色选择器</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#5-Base-url">5&nbsp;&nbsp;<span>5. Base url</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#6-Lazy-loading-懒加载">6&nbsp;&nbsp;<span>6. Lazy loading 懒加载</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#7-Calendar-日历">7&nbsp;&nbsp;<span>7. Calendar 日历</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#8-Single-range-数字区间">8&nbsp;&nbsp;<span>8. Single range 数字区间</span></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#9-Content-editable">9&nbsp;&nbsp;<span>9. Content editable</span></a>
+                    
+                </div>
+            </div>
+             -->
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/xuxia2013">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            <a class="navbar-item" title="Rss" href="/atom.xml">
+                
+                <i class="fa fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            好玩有趣的HTML标签
+        
+    </h1>
+    
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2023-08-09T02:38:23.000Z" itemprop="datePublished">8月 9 2023</time>
+            
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            3 分钟 读完 (约 375 字)
+            
+            
+            <span id="/91c73277218b/"  class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count"></i>
+            </span>
+            
+        </span>
+        
+        
+
+    </div>
+    
+
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>我发现很多前端开发工程师会自己基于成熟的 ui 库开封装一些组件，而不是使用原始的 HTML。希望本文能为你的项目带来些新思路。</p>
+<p>下面列举些 9 个有趣的 HTML 标签和属性，也希望你来补充些，请留言告诉我。</p>
+<span id="more"></span>
+
+<h3 id="1-Progress-bar-进度条"><a href="#1-Progress-bar-进度条" class="headerlink" title="1. Progress bar 进度条"></a>1. Progress bar 进度条</h3><figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"32"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span>32%<span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/91c73277218b/1.webp"></p>
+<h3 id="2-Expansion-panel-折叠面板"><a href="#2-Expansion-panel-折叠面板" class="headerlink" title="2. Expansion panel (折叠面板)"></a>2. Expansion panel (折叠面板)</h3><figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Global Goals<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><br><span class="line">    The Global Goals are a set of 17 commitments made by 193 world leaders, to</span><br><span class="line">    end extreme poverty, inequality, and climate change by 2030..</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/91c73277218b/2.gif"></p>
+<h3 id="3-Dialog-对话框"><a href="#3-Dialog-对话框" class="headerlink" title="3. Dialog 对话框"></a>3. Dialog 对话框</h3><p>为网站添加对话框的语义方法。但在我看来，原生的 HTML 元素要逊色于用户界面库中的现成组件</p>
+<figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dialog</span> <span class="hljs-attr">open</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Greetings, one and all!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/91c73277218b/3.webp"></p>
+<h3 id="4-Color-selection-颜色选择器"><a href="#4-Color-selection-颜色选择器" class="headerlink" title="4. Color selection 颜色选择器"></a>4. Color selection 颜色选择器</h3><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="hljs-string">"color"</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/91c73277218b/4.gif"></p>
+<h3 id="5-Base-url"><a href="#5-Base-url" class="headerlink" title="5. Base url"></a>5. Base url</h3><base> HTML 标签指定文档中所有 URL 的基础 URL
+<figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;base href=<span class="hljs-string">"https://leonid-shvab.web.app/"</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"contacts"</span>&gt;</span>contacts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><br><span class="line"><span class="hljs-language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"blog/000"</span>&gt;</span>blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="6-Lazy-loading-懒加载"><a href="#6-Lazy-loading-懒加载" class="headerlink" title="6. Lazy loading 懒加载"></a>6. Lazy loading 懒加载</h3><p>懒加载的本地实现。只需添加 loading=”lazy” 属性，就能在网络中逐一加载图片。该功能与浏览器的兼容性较弱。但就未来而言，它是懒加载的一个很好的解决方案</p>
+<figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>  <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400px"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400px"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>  <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"2.jpg"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400px"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400px"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>  <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"3.jpg"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400px"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400px"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/91c73277218b/6.gif"></p>
+<h3 id="7-Calendar-日历"><a href="#7-Calendar-日历" class="headerlink" title="7. Calendar 日历"></a>7. Calendar 日历</h3><p>原生日历见过吗？</p>
+<figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="hljs-string">"date"</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/91c73277218b/7.webp"></p>
+<h3 id="8-Single-range-数字区间"><a href="#8-Single-range-数字区间" class="headerlink" title="8. Single range 数字区间"></a>8. Single range 数字区间</h3><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="hljs-string">"range"</span> min=<span class="hljs-string">"0"</span> max=<span class="hljs-string">"50"</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/91c73277218b/8.gif"></p>
+<h3 id="9-Content-editable"><a href="#9-Content-editable" class="headerlink" title="9. Content editable"></a>9. Content editable</h3><p>一个有趣的属性，可以编辑文本块</p>
+<figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">contenteditable</span>=<span class="hljs-string">"true"</span>&gt;</span></span><br><span class="line">  You can edit this block of text.</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/91c73277218b/9.gif"></p>
+<blockquote>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://medium.com/@leonidshvab1996/interesting-html-tags-89ecc04cb2a9">https://medium.com/@leonidshvab1996/interesting-html-tags-89ecc04cb2a9</a></p>
+</blockquote>
+<p>公号同步更新，欢迎关注 👻<br><img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/ercode.jpg?x-oss-process=image/resize,w_200,h_200"></p>
+<pre><code>
+</code></pre>
+</body></html>
+
+        
+
+
+
+    
+        
+       
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/c89b26425a28/">React18 | useTransition</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!--  -->
+
+
+
+
+  
+      <div class="toc-table">
+         <p class="head">目录</p>
+          
+          
+          
+          
+          <a class="navbar-item" href="#1-Progress-bar-进度条">
+            <span style="opacity: 0">1.</span>
+            &nbsp;&nbsp;<span>1. Progress bar 进度条</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#2-Expansion-panel-折叠面板">
+            <span style="opacity: 0">2.</span>
+            &nbsp;&nbsp;<span>2. Expansion panel (折叠面板)</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#3-Dialog-对话框">
+            <span style="opacity: 0">3.</span>
+            &nbsp;&nbsp;<span>3. Dialog 对话框</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#4-Color-selection-颜色选择器">
+            <span style="opacity: 0">4.</span>
+            &nbsp;&nbsp;<span>4. Color selection 颜色选择器</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#5-Base-url">
+            <span style="opacity: 0">5.</span>
+            &nbsp;&nbsp;<span>5. Base url</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#6-Lazy-loading-懒加载">
+            <span style="opacity: 0">6.</span>
+            &nbsp;&nbsp;<span>6. Lazy loading 懒加载</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#7-Calendar-日历">
+            <span style="opacity: 0">7.</span>
+            &nbsp;&nbsp;<span>7. Calendar 日历</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#8-Single-range-数字区间">
+            <span style="opacity: 0">8.</span>
+            &nbsp;&nbsp;<span>8. Single range 数字区间</span></a>
+          
+          
+          
+          
+          <a class="navbar-item" href="#9-Content-editable">
+            <span style="opacity: 0">9.</span>
+            &nbsp;&nbsp;<span>9. Content editable</span></a>
+          
+         
+      </div>
+  
+
+  <p style="
+  position: fixed;
+  border: 4px solid #f0f0f0;
+  border-radius: 15px;
+  left: 20px; width: 120px;
+  text-align: center;
+  padding: 5px 10px;
+  bottom: 30px;">
+    
+    <img src="https://nora-blog.oss-cn-beijing.aliyuncs.com/QRcode_SP%20%E2%80%94%201.png" alt="" width="120" style="padding: 10px 0 0px;">
+  </p>
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div style="text-align: center;">
+        <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>本作品采用<a rel="license noopener"
+                target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+            <div class="columns content">
+
+            <div class="column is-narrow has-text-centered" style="display: flex; width: 100%;">
+                <span style="flex: 1">
+                    &copy; 2023
+                    noraxu&nbsp;
+                        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                                target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                </span>
+                <span style="flex: 1">
+                    <!-- 本站总访问量<span id="busuanzi_value_site_pv" style="color: #3273dc;"></span>次 -->
+                    <!-- 本站访客数<span id="busuanzi_value_site_uv" style="color: #3273dc;"></span>人次 -->
+                </span>
+
+            </div>
+            
+            <div class="column is-hidden-mobile"></div>
+
+            
+                    
+
+        </div>
+        
+        <div style="justify-content: center;
+        display: flex;
+        align-items: center;">
+           
+        </div>
+
+        
+       
+
+    </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery > p > .gallery-item').unwrap();
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

@@ -15,8 +15,25 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 20 Jan 2024 09:02:18 GMT</pubDate>
+    <pubDate>Sun, 28 Jan 2024 07:50:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何开发一个谷歌浏览器插件工具</title>
+      <link>http://www.noraxu.cn/077811e5a74e/</link>
+      <guid>http://www.noraxu.cn/077811e5a74e/</guid>
+      <pubDate>Sun, 28 Jan 2024 07:23:05 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Chrome 是前端开发者日常使用的浏览器：拥有出色的性能、实用的开发工具和丰富的扩展。&lt;br&gt;我相信你也安装过很多优秀的插件，比如 adblock,Google 文档等，也有许多优秀的前端开发者参与开发插件，并带来了可观的收入。&lt;br&gt;在本文中，我将基于 TypeScript 模板一步一步创建 Chrome 扩展程序，告诉你 chrome 插件开发和普通网页开发有什么区别&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/077811e5a74e/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>如何优化你的博客SEO来获取流量</title>
@@ -414,30 +431,6 @@
       
       
       <comments>http://www.noraxu.cn/83a0a39efd12/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>我最近在用的5个好东西</title>
-      <link>http://www.noraxu.cn/6cee586f56d9/</link>
-      <guid>http://www.noraxu.cn/6cee586f56d9/</guid>
-      <pubDate>Wed, 17 May 2023 08:03:46 GMT</pubDate>
-      
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/geekculture/the-5-paid-subscriptions-i-actually-use-in-2023-as-a-software-engineer-9418515a315a&quot;&gt;https://medium.com/geekculture/the-5-paid-subscriptions-i-actually-use-in-2023-as-a-software-engineer-9418515a315a&lt;/a&gt;&lt;br&gt;作者：&lt;a href=&quot;https://medium.com/@jacobistyping&quot;&gt;Jacob Bennett&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;以下是我在2022-23年花钱购买的、真正改善了我作为一个软件工程师工作效率的东西&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-      
-      
-      
-      
-      <category domain="http://www.noraxu.cn/categories/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <category domain="http://www.noraxu.cn/tags/%E7%BF%BB%E8%AF%91/">翻译</category>
-      
-      
-      <comments>http://www.noraxu.cn/6cee586f56d9/#disqus_thread</comments>
       
     </item>
     

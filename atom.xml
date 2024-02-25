@@ -15,8 +15,25 @@
     <atom:link href="http://www.noraxu.cn/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 28 Jan 2024 07:50:18 GMT</pubDate>
+    <pubDate>Sun, 25 Feb 2024 03:10:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>好用的AI工具</title>
+      <link>http://www.noraxu.cn/a4078877d414/</link>
+      <guid>http://www.noraxu.cn/a4078877d414/</guid>
+      <pubDate>Sun, 25 Feb 2024 02:36:59 GMT</pubDate>
+      
+      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;我之前分享了很多关于chatgpt的文章，我发现，越来越多的人关注这些信息，也越来越焦虑，担心着人类将被 AI 取代，人工智能可以更好地处理重复性、低效率的工作，从而让人类释放出更多的时间和精力去从事更有创造性、思维性的工作。还会带来更多新的问题，就像农业时代虽然增加了食物，让大多数人过得比原始社会更好，但仍然远非理想中的美丽天堂。&lt;br&gt;作为一名平凡的人类，跟紧时代的潮流，学习加以使用更为重要。你可能不需要理解其中复杂的内核，能提高你的个人生产力就很好了。&lt;br&gt;下面是一些好用的工具，希望能减轻你的焦虑。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>http://www.noraxu.cn/a4078877d414/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>如何开发一个谷歌浏览器插件工具</title>
@@ -414,23 +431,6 @@
       
       
       <comments>http://www.noraxu.cn/c53c25628429/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Top VS Code扩展插件</title>
-      <link>http://www.noraxu.cn/83a0a39efd12/</link>
-      <guid>http://www.noraxu.cn/83a0a39efd12/</guid>
-      <pubDate>Mon, 22 May 2023 01:49:14 GMT</pubDate>
-      
-      <description>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Visual Studio Code 无疑是当今最流行的代码编辑器。它是微软为 Windows、Linux 和 macOS 开发的轻型代码编辑器。它包括各种功能，如语法高亮，调试，智能代码完成，片段，嵌入式 Git，代码重构等。与市场上的其他代码编辑器相比，VS Code 提供了更好的性能和稳定性。&lt;br&gt;下面就来分享开发必备的 VS Code 插件！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-      
-      
-      
-      
-      
-      
-      <comments>http://www.noraxu.cn/83a0a39efd12/#disqus_thread</comments>
       
     </item>
     
